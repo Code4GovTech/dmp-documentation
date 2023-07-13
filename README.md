@@ -26,30 +26,7 @@
 #### In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below! Happy Submissions :slightly_smiling_face:
 
 <BR>
-<div>
- <h1 align="center">Projects</h1>
 
-  <h2 align="center"><B>BUILDING AN OPENSOURCE GOVERNMENT OPERATING SYSTEM</B></h2>
-
-  | Project Name  |  Description  | Mentors Assigned |
-| :------------ |:---------------:| -----:|
-| [UCI Web Channel](https://github.com/Code4GovTech/C4GT/wiki/UCI-Web-Channel)      | UCI is an open source platform that enables exactly this - a configurable platform to enable personalised chatbot communication across channels such as WhatsApp, Telegram, SMS, email and more. With UCI you can plugin any federated set of users, any micro experience generating transformers and any distribution channel adapters. | [Shruti](https://github.com/Shruti3004)&[Chakshu](https://github.com/ChakshuGautam) |
-| [Admin for Sunbird RC](https://github.com/Code4GovTech/C4GT/wiki/Admin-for-Sunbird-RC)      | Sunbird RC is an open-source software framework for rapidly building electronic registries, enable attestation capabilities, and build verifiable credentialing with minimal effort. X-Admin is an open-source, low-code framework to create internal admin tools for governance use cases. | [Shruti](https://github.com/Shruti3004)&[Chakshu](https://github.com/ChakshuGautam) |
-| [UCI Signal Integration](https://github.com/Code4GovTech/C4GT/wiki/UCI-Signal-Integration)      | UCI is an open source platform that enables exactly this - a configurable platform to enable personalised chatbot communication across channels such as WhatsApp, Telegram, SMS, email and more. With UCI you can plugin any federated set of users, any micro experience generating transformers and any distribution channel adapters. | [Shruti](https://github.com/Shruti3004)&[Chakshu](https://github.com/ChakshuGautam) |
-| [Centralised Access Control](https://github.com/Code4GovTech/C4GT/wiki/Centralised-Access-Control)      | OAuth2 Proxy is a reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group. This enables the creation of stateless microservices that can be verified through a network layer. The goal is to add FusionAuth as a provider that will enable all GovTech products to not include authentication-related code inside microservices, enabling the creation and management of ACL outside of a microservice in a reusable way.|[Chakshu](https://github.com/ChakshuGautam) |
-| [Competency Passbook](https://github.com/Code4GovTech/C4GT/wiki/Competency-Passbook)      | A competency ledger on a private blockchain network of schools for awarding badges and certificates to students can remain decentralised in the private blockchain network of schools and will always be one source of truth for authenticity. | [Bharat](https://github.com/bharatkashyap) |
-| [Low-code Admin Console](https://github.com/Code4GovTech/C4GT/wiki/Low-code-Admin-Console)      | X-Admin an open-source framework to create internal admin tools for governance use cases. | [Bharat](https://github.com/bharatkashyap)  |
-| [Workflow Management](https://github.com/Code4GovTech/C4GT/wiki/Workflow-Management)      | The aim of this project is to enable GovTech workflows such as If This Then That (IFTTT), Escalations and Alerts to be configured in a reusable manner and run through a combination of open source products - n8n (workflow builder) and temporal (runner). | [Ashish]() |
-| [Machine Learning Platform](https://github.com/Code4GovTech/C4GT/wiki/Machine-Learning-Platform)      | While there is a lot of data, it’s not easy to find people who can use that to good effect. The aim of this project is to build a platform that can be used by anyone to train models from these datasets, experiment between different models, deploy the better performing one and monitor the performance in production. | [Ashish]() |
-| [URL Shortener (YAUS)](https://github.com/Code4GovTech/C4GT/wiki/Yet-Another-URL-Shortener-(YAUS))      | YAUS is an open-source service for generating shortened URLs. | [BACHI](https://github.com/bachia) |
-| [Doc Generator](https://github.com/Code4GovTech/C4GT/wiki/Doc-Generator)      | Doc generator is a plugin-based service that will help in generating reports, docs, pdfs, from various data sources and in any required format and layout. The Design Doc can be found here. | [BACHI](https://github.com/bachia) |
-| [Shiksha Postgres Adapter](https://github.com/Code4GovTech/C4GT/wiki/Shiksha-Postgres-Adapter)      | This project aims to create a reference adapter which can interact with a Postgres database. This can be given as a reference implementation to deployers who may not have an existing backend.The project will involve creating a new adapter in Shiksha that uses Postgres as a backend. The schemas in Postgres can mimic the schemas from the Shiksha specification to make the implementation of the adapter simple. | [Ashwin](https://github.com/coolbung)|
-| [Shiksha CMS and Announcements Module](https://github.com/Code4GovTech/C4GT/wiki/CMS-and-Announcements-Module-for-Shiksha) | As Shiksha starts getting deployed, apart from the core functionalities like worksheets and attendance, there would be non-functional requirements like creating landing pages, welcome screens and content pages. Content pages would be useful to show information about the sponsoring ministry / authority, help and FAQ pages. Deployers will need to be able to create such content pages and also announcements (eg show announcements about events or updates).The project will allow 2 areas:Manage announcements and Manage content pages |  [Ashwin](https://github.com/coolbung)&[Arun](https://github.com/arajput)  |
-| [Shiksha Frontend Restructuring](https://github.com/Code4GovTech/C4GT/wiki/Restructuring-of-the-frontend-module-federation)      | The aim of Shiksha is to make highly configurable modules which can be embed and extend easily by developers in any of their application and used standalone by providing data points to it. | [Ashwin](https://github.com/coolbung)&[Arun](https://github.com/arajput)  |
-| [Shiksha Design System](https://github.com/Code4GovTech/C4GT/wiki/Shiksha-Design-System)      | The aim of Shiksha is to make highly configurable modules which can be embed and extend easily by developers in any of their application and used standalone by providing data points to it.| [Ashwin](https://github.com/coolbung)&[Arun](https://github.com/arajput) |
-| [Sunbird QUML Player](https://github.com/Code4GovTech/C4GT/wiki/Sunbird-QUML-Player)      | Sunbird inQuiry Sunbird inQuiry is a building block, open sourced under MIT license, that enables setting up of question banks that can contain questions and question sets for various use cases such as practice, assessment, quiz, worksheet and many more. | [Kartheek Palla](https://github.com/pallakartheekreddy)|
-
-<BR>
 
 </div>
 
@@ -243,7 +220,7 @@ Good Luck for your journey
 
 <div align="Center">
 
-### © 2022 Code for GovTech (C4GT) and contributors
+### © 2023 Code for GovTech (C4GT) and contributors
 ### This project is licensed under the [**MIT license**]().
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
