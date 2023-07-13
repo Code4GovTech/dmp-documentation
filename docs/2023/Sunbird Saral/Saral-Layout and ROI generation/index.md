@@ -9,9 +9,9 @@ slug: /2023/Sunbird Saral/Saral-Layout and ROI generation
 Shreyas Pande
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+- [Email](mailto: shreyassachin@iitbhilai.ac.in)
+- [Linked In](https://www.linkedin.com/in/shreyas-pande-b27087217/)
+- [GitHub](https://github.com/shreyaspande2003)
 
 # Project Description
 
