@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+title: TrustIn
+---
+
 TrustIn is an award winning enterprise software solutions company that builds secure, sensitive systems to manage the complete enterprise POSH [Prevention Of Sexual Harassment] legal compliance process, from case reporting to redressal workflow.
 
 <p align="center">
