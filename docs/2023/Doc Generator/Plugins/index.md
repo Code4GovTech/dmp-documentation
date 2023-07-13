@@ -9,9 +9,9 @@ slug: /2023/Doc Generator/Plugins
 Kartik Raj Tongaria
 
 # Contact Info
-[Email](mailto:) -->tongaria2001kartik@gmail.com
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+[Email](tongaria2001kartik@gmail.com)
+[Linked In](https://www.linkedin.com/in/kartik-tongaria-645b871b4/)
+[GitHub](https://github.com/kartiktongaria)
 
 # Project Description
 
