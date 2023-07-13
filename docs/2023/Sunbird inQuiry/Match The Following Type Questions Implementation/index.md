@@ -6,7 +6,7 @@ slug: /2023/Yaus/Match the following Type Questions Implementation
 
 
 # Author
-Rishabh Jain
+Arpan Gupta
 
 # Contact Info
 [Email](mailto: arpan6095@gmail.com)
