@@ -66,8 +66,8 @@ module.exports = {
           to: "/docs/2023/",
           items: [
             {
-              label: "UCI Web Channel",
-              to: "/docs/2023/",
+              label: "ABDM",
+              to: "/docs/2023/ABDM",
             },
 
             {
