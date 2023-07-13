@@ -1,17 +1,17 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Frontend And Deep Linking
+slug: /2023/Yaus/Sunbird Obsrv
 ---
 
 
 # Author
-Rishabh Jain
+Negrah
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+Email- negrahsingh32@gmail.com
+LinkedIn- Negrah S
+Github- Negrah-S
 
 # Project Description
 
