@@ -9,9 +9,9 @@ slug: /2023/Yaus/Match the following Type Questions Implementation
 Rishabh Jain
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+[Email](mailto: arpan6095@gmail.com)
+[Linked In](https://www.linkedin.com/in/gupta-arpan/)
+[GitHub](https://github.com/gupta-arpan)
 
 # Project Description
 
