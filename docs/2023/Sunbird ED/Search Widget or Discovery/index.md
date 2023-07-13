@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/search widget or discovery/search widget or discovery
+slug: /2023/Sunbird ED/Search Widget or Discovery
 ---
 
 
