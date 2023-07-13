@@ -20,5 +20,3 @@ yarn-debug.log*
 yarn-error.log*
 
 tags
-*.lock
-package-lock.json
