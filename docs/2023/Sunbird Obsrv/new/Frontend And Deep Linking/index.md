@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Sunbird Obsrv
+slug: /2023/Sunbird Obsrv/new
 ---
 
 
