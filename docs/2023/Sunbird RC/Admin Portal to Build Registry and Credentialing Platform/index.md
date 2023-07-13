@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Sunbird-RC/Admin Portal to Build Registry and Credentialing Platform
+slug: /2023/Sunbird RC/Admin Portal to Build Registry and Credentialing Platform
 ---
 
 
