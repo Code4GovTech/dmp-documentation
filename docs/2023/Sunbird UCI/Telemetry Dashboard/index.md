@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Telemetry Dashboard
+slug: /2023/Sunbird UCI/Telemetry Dashboard
 ---
 
 
