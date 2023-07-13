@@ -4,7 +4,7 @@ title: C4GT'23
 slug: /2023
 ---
 
-C4GT has been conceptualized as a summer coding program to create a community that can build and contribute to global digital public goods.
+C4GT Mentoring Program has been conceptualized as a summer coding program to create a close-knit community that can build and contribute to global digital public goods.
 
 - An opportunity for college students and working professionals in India to experience the GovTech space
 - Organized annually over 2 months (July-August)
@@ -27,7 +27,7 @@ Following are the important links to projects done in C4GT 2023.
 | Ishaan Shrivastava    | [AI Tools-Dictionary Augmented Transformers ](https://github.com/Samagra-Development/ai-tools/issues/81)    | Link                                                                                                                                 |
 | Harshit Gupta      | [AI Tools-Document Uploader  ](https://github.com/Samagra-Development/ai-tools/issues/78)                     | Link                                                                                                                                 |
 | Akanksha Sinha | [Avni-Canned Analytics ](https://github.com/avniproject/avni-product/issues/1334) | Link                                                                                                                                 |
-| Ayush Kumar   | [Bahmni-Order Features](https://github.com/Bahmni/connect2Bahmni/issues/3)            | Link                                                                                                                                 |
+| Ayush Kumar   | [Bahmni-Order Features](https://github.com/Bahmni/connect2Bahmni/issues/3)            | [Link](https://ayushthakurblogs.hashnode.dev/c4gt-beginner-to-contributor)                                                                                                                                 |
 | Alpit Kumar  | [Bahmni-Standalone Document Upload Module](https://bahmni.atlassian.net/browse/BAH-3006)   | Link                                                                                                                                 |
 | Aniket Bhatia   | [Bahmni-Book appointments via WhatzApp ](https://github.com/Bahmni/openmrs-module-bahmniapps/issues/572)              | Link                                                                                                                                 |
 | Nupoor Shetye  |  [Bahmni-Patient portal to access patient records](https://github.com/Bahmni/openmrs-module-bahmniapps/issues/573)             | Link         
@@ -39,22 +39,22 @@ Following are the important links to projects done in C4GT 2023.
 | Shashwat Anand   | [Beckn-Synapse  ](https://github.com/beckn/synapse/issues/1)      | Link    
 | Aakanksha Jaiswar  | [Beckn-Smart Policy Infrastructure ](https://github.com/beckn/policy-admin-api/issues/19)         | Link    
 | Monishka Jha   | [Beckn-Reputation Infrastructure](https://github.com/beckn/reputation-infra/issues/1)        | Link    
-| Roshan George   |[Beckn-Beckn QR   ](https://github.com/beckn/beckn-qr-code-generator/issues/1)       | Link    
+| Roshan George   |[Beckn-Beckn QR   ](https://github.com/beckn/beckn-qr-code-generator/issues/1)       | [Link](https://roshangeorge97.medium.com/my-journey-as-a-beckn-protocol-contributor-c91fff60eeb2)    
 | Chekuri Premsai Varma   | [Beckn-Beckn-in-a-box](https://github.com/beckn/beckn-in-a-box/issues/9)           | Link    
 | Achintya Kumar   | [Beckn-Beckn Certification Suite ](https://github.com/beckn/certification-suite/issues/1)        | Link    
 | Sandeep Pillai  | [Beckn-BAP Boilerplate  ](https://github.com/beckn/BAP-Boilerplate-SDK/issues/1)        | Link    
-| Mohammad Sarfraz  | [Beckn-Beckn BPP Boilerplate ](https://github.com/beckn/BPP-Boilerplate-SDK/issues/1)        | Link    
+| Mohammad Sarfraz  | [Beckn-Beckn BPP Boilerplate ](https://github.com/beckn/BPP-Boilerplate-SDK/issues/1)        | [Link](https://medium.com/@alamsarfraz422/my-c4gt-experience-beckn-3e27b1e558ff)    
 | Shivam Jha   | [CARE-Cypress Tests for CARE](https://github.com/coronasafe/care_fe/issues/5491)           | Link    
 | Suyash Singh   | [CARE-Serializers for list and detail views  ](https://github.com/coronasafe/care_fe/issues/5492)     | Link    
 | BHAVIK AGARWAL   | [CARE-Redesign Doctor Notes](https://github.com/coronasafe/care_fe/issues/5493)        | Link    
 | Jahnab Dutta   | [CARE-Live Camera Feed Enhancement ](https://github.com/coronasafe/care_fe/issues/5494)       | Link    
-| Aman Shenoy   | [CARE-Type safety to Teleicu Middleware ](https://github.com/coronasafe/care_fe/issues/5495)       | Link    
+| Aman Shenoy   | [CARE-Type safety to Teleicu Middleware ](https://github.com/coronasafe/care_fe/issues/5495)       | [Link](https://medium.com/@nottherealaman/code-4-govt-contribution-experience-5798c408084b)    
 | Venu Choudhary   | [CORD Network-Integration with Sunbird RC ](https://github.com/dhiway/cord/issues/163)         | Link    
 | Suyash Gautam  |[cQube-cQube Chat  ](https://github.com/Sunbird-cQube/cQubeChat/issues/1)       | Link    
 | Shashwat Mahajan  | [cQube-Ingestion speedup and refactoring](https://github.com/ChakshuGautam/cQube-POCs/issues/90)           | Link    
 | Peddi Sai   | [cQube-File Validation Issues    ](https://github.com/Sunbird-cQube/InputFileValidator/issues/1)      | Link    
 | Jayanth Kumar  | [DDP-Set up a monitoring system](https://github.com/DevDataPlatform/platform_infra/issues/10)          | Link    
-| Aviraj Gour   | [DDP-Airbyte connector for Avni](https://github.com/DevDataPlatform/airbyte/issues/36)            | Link    
+| Aviraj Gour   | [DDP-Airbyte connector for Avni](https://github.com/DevDataPlatform/airbyte/issues/36)            | [Link](https://projecttech4dev.org/2023/06/21/from-project-selection-to-building-an-airbyte-connector-my-ongoing-journey-with-c4gt-2023/)    
 | Yuvraj Chhetri  | [DevOps Pipeline-Build the v2 of our Samagra Devops pipeline which powers the deployment of all our projects ](https://github.com/Samagra-Development/samagra-devops/issues/6)       | Link    
 | Ankita Sahoo  | [DIGIT-JWT based authentication and authorization ](https://github.com/egovernments/Digit-Core/issues/77)        | Link    
 | Achintya Singh  | [DIGIT-Vehicle Tracking ](https://github.com/egovernments/Digit-Core/issues/79)        | Link    
@@ -70,15 +70,15 @@ Following are the important links to projects done in C4GT 2023.
 | Swatishree Mahapatra  | [Doc Generator-User Interface for Doc Generator ](https://github.com/Samagra-Development/Doc-Generator/issues/123)         | Link    
 | Jhansi.S  | [Farmstack-Dashboard Builder](https://github.com/digitalgreenorg/farmstack-c4gt/issues/1)     | Link    
 | Sahajpreet Singh   | [Farmstack-API Builder ](https://github.com/digitalgreenorg/farmstack-c4gt/issues/2)    | Link    
-| Aman Kumar  |[Glific-Implement authentication and chat interface for the mobile app according to the designs](https://github.com/glific/mobile/issues/1)          | Link    
-| Chaitanya Thakur   | [Glific-Internal dashboard enhancements](https://github.com/glific/glific/issues/2790)          | Link    
-| Aashi Jain  | [Glific-Integrate with a subscription based billing system ](https://github.com/glific/glific/issues/2794)        | Link    
+| Aman Kumar  |[Glific-Implement authentication and chat interface for the mobile app according to the designs](https://github.com/glific/mobile/issues/1)          | [Link](https://glific.org/my-journey-with-glific-contributing-to-an-impactful-open-source-project/)    
+| Chaitanya Thakur   | [Glific-Internal dashboard enhancements](https://github.com/glific/glific/issues/2790)          | [Link](https://glific.org/my-c4gt-adventure-a-journey-to-remember/)    
+| Aashi Jain  | [Glific-Integrate with a subscription based billing system ](https://github.com/glific/glific/issues/2794)        | [Link](https://glific.org/glific-and-elixir-a-harmonious-journey-through-c4gt/)    
 | Mohit Kumar   | [Health Claims Exchange-Build HCX Participant System JavaScript SDK ](https://github.com/Swasth-Digital-Health-Foundation/integration-sdks/issues/52)      | Link    
 | Shivam Sahu  | [Health Claims Exchange-Build HCX Participant System Python SDK](https://github.com/Swasth-Digital-Health-Foundation/integration-sdks/issues/51)     | Link    
 | Sumit Maithani   | [Karmayogi-Competency Passbook for Officials](https://openforge.gov.in/plugins/tracker/?aid=77952)          | Link    
 | Vinayak Raj   | [Karmayogi-Integrate the Content translation UI into iGOT Karamayogi   ](https://openforge.gov.in/plugins/tracker/?aid=77968)        | Link    
 | Divyansh Tripathi   | [Karmayogi-LLM for question answering ](https://openforge.gov.in/plugins/tracker/?aid=77956)          | Link    
-| Vanshika Mishra   | [Karmayogi-LLM for question answering part 2  ](https://openforge.gov.in/plugins/tracker/?aid=77965)        | Link    
+| Vanshika Mishra   | [Karmayogi-LLM for question answering part 2  ](https://openforge.gov.in/plugins/tracker/?aid=77965)        | [Link](https://medium.com/@mvanshika23/my-c4gt-experience-52d0a008d682)    
 | Prateek Kumar   | [Karmayogi-Discovering Mentors / Training Institutes  ](https://openforge.gov.in/plugins/tracker/?aid=77997)    | Link    
 | Jayesh Sharma  | [ODK Extension Collection -Upload ODK Collect Extension to maven as a repo & Create Github Actions for automatic release](https://github.com/Samagra-Development/odk-collect-extension/issues/39)        | Link   
 | Prabhav Chopra   | [ODK Extension Collection -Get form response as JSON & Send submissions to custom server ](https://github.com/Samagra-Development/odk-collect-extension/issues/5)          | Link    
@@ -89,11 +89,11 @@ Following are the important links to projects done in C4GT 2023.
 | Om Tanmaya   | [Sunbird ED-Implement independent SSO flow NPM package](https://github.com/Sunbird-Ed/SunbirdEd-portal/issues/8666)          | Link    
 | Shivam Chaturvedi   | [Sunbird ED-Implementing content detail page as widget](https://github.com/Sunbird-Ed/SunbirdEd-portal/issues/8656)        | Link    
 | Saurabh Singh Balke   | [Sunbird ED-Support for Optional Material in Course](https://github.com/Sunbird-Ed/SunbirdEd-portal/issues/8664)           | Link    
-| Pranshu Jain   | [Sunbird ED-Search / Discovery widget for sunbird ED ](https://github.com/Sunbird-Ed/SunbirdEd-portal/issues/8690)         | Link    
+| Pranshu Jain   | [Sunbird ED-Search / Discovery widget for sunbird ED ](https://github.com/Sunbird-Ed/SunbirdEd-portal/issues/8690)         | [Link](https://medium.com/@Pranshu_Jain/unlocking-opportunities-my-new-journey-as-a-c4gt-contributor-c7373f20413)    
 | Siddharth Banga   | [Sunbird ED-Review enhancements  ](https://github.com/Sunbird-Ed/SunbirdEd-portal/issues/8691)        | Link    
 | Deepali Lodhi  | [Sunbird ED-Bulk Content creation ](https://github.com/Sunbird-Ed/SunbirdEd-portal/issues/8692)          | Link    
 | Sarthak Jain  | [Sunbird inQuiry-Embedding QuML player ](https://github.com/Sunbird-inQuiry/player/issues/34)          | Link    
-| Simran Nigam   | [Sunbird inQuiry-Implementation of audio upload in QuML ](https://github.com/Sunbird-inQuiry/editor/issues/40)       | Link    
+| Simran Nigam   | [Sunbird inQuiry-Implementation of audio upload in QuML ](https://github.com/Sunbird-inQuiry/editor/issues/40)       | [Link](https://sim14blogs.hashnode.dev/how-can-you-become-a-c4gt-contributor)    
 | Shlok  | [Sunbird inQuiry-Auto generation of questions in QuML ](https://github.com/Sunbird-inQuiry/editor/issues/41)       | Link    
 | Arpan Gupta  | [Sunbird inQuiry-Addition of new type of questions in Editor](https://github.com/Sunbird-inQuiry/editor/issues/42)         | Link    
 | Yash Sharma   | [Sunbird Knowlg-One-click installation of Knowlg ](https://github.com/Sunbird-Knowlg/knowledge-platform/issues/938)       | Link    
@@ -113,7 +113,7 @@ Following are the important links to projects done in C4GT 2023.
 | Tushar Banik  | [Sunbird UCI-Theming & Configuration](https://github.com/samagra-comms/uci-web-channel/issues/107)        | Link    
 | Rishit Gupta  | [Sunbird UCI-Refactoring Components ](https://github.com/samagra-comms/uci-web-channel/issues/104)       | Link    
 | Apoorv Garg  | [Template creation portal-UI for generating Excel templates ](https://github.com/ELEVATE-Project/template-validation-portal/issues/30)       | Link    
-| Pramod Goyal | [Text2SQL-Performance, Cost Optimization, Benchmarking ](https://github.com/Samagra-Development/Text2SQL/issues/28)       | Link    
+| Pramod Goyal | [Text2SQL-Performance, Cost Optimization, Benchmarking ](https://github.com/Samagra-Development/Text2SQL/issues/28)       | [Link](https://medium.com/@goyalpramod1729/how-i-made-my-first-contribution-to-c4gt-as-someone-who-has-never-worked-in-open-source-6b6c7b71da3b)    
 | Lipi Kansal  | [TrustBot and POSHpal-TrustBot and POSHpal  ](https://github.com/nachiketa07/C4GT2023-project-setup/issues/2)   | Link    
 | Srishti Shukla  | [TrustIn-TrustIn ](https://github.com/nachiketa07/C4GT2023-project-setup/issues/1)       | Link    
 | Abhishek Bhatt | [Unnati-Implement Unnati standalone micro PWA](https://github.com/ELEVATE-Project/project-frontend/issues/1)        | Link    
