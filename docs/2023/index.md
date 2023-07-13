@@ -123,19 +123,4 @@ Following are the important links to projects done in C4GT 2023.
 
 
 
-### Mentors
-
-- [Ashish Yadav](https://github.com/ashish-samagra)
-- [Ashwin Date](https://github.com/coolbung)
-- [Bharat Kashyap](https://github.com/bharatkashyap)
-- [Chakshu Gautam](https://github.com/ChakshuGautam)
-- [Kartheek Palla](https://github.com/pallakartheekreddy)
-- [Manav Bharambe](https://github.com/anarchistMegabyte)
-- [Shruti Agarwal](https://github.com/Shruti3004)
-
-### Photo
-
-<img src="/img/c4gt22participants1.jpeg"/>
-<img src="/img/c4gt22participants2.jpeg"/>
-
 Thanks for being part of the community. 💚
