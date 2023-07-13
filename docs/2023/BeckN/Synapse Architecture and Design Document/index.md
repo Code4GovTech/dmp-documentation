@@ -10,8 +10,11 @@ Shashwat Anand
 
 # Contact Info
 <!-- - [Email](mailto:) -->
+shashwatanand1801@gmail.com
 <!-- - [Linked In]() -->
+https://www.linkedin.com/in/shashwat-anand
 <!-- - [GitHub]() -->
+https://github.com/shashwatanand1801
 
 # Project Description
 
