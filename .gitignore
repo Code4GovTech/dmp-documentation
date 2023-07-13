@@ -10,6 +10,10 @@ package.json
 .docusaurus
 .cache-loader
 
+# Ignoring npm package lock
+package-lock.json
+npm-shrinkwrap.json
+
 # Misc
 .DS_Store
 .env.local
@@ -22,3 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 
 tags
+
+.idea
+yarn.lock
