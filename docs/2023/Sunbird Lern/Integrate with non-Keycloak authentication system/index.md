@@ -1,17 +1,17 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Frontend And Deep Linking
+slug: /2023/Sunbird Lern/Integrate with non-Keycloak authentication system
 ---
 
 
 # Author
-Rishabh Jain
+Amol Singh
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+[Email](mailto:singhamol876@gmail.com)
+[Linked In](https://www.linkedin.com/in/amolsingh876/)
+[GitHub](https://github.com/sanbit876)
 
 # Project Description
 
