@@ -71,8 +71,8 @@ module.exports = {
             },
 
             {
-              label: "BeckN",
-              to: "/docs/2023/",
+              label: "AI Tools",
+              to: "/docs/2023/AI Tools",
             },
             {
               label: "Admin for Sunbird RC",
