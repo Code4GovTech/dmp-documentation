@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Match the following Type Questions Implementation
+slug: /2023/Sunbird inQuiry/Match The Following Type Questions Implementation
 ---
 
 
