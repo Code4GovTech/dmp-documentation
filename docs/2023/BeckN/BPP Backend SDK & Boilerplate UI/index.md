@@ -9,9 +9,9 @@ slug: /2023/BeckN/BPP Backend SDK & Boilerplate UI
 Mohammad Sarfraz Alam
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+- [Email](mailto:alamsarfraz422@gmail.com)
+- [Linked In](https://www.linkedin.com/in/sarfraz-alam-113575201/)
+- [GitHub](https://github.com/Sarfraz-droid)
 
 # Project Description
 
