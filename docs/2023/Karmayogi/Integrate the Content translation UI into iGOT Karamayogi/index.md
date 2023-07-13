@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Integrate the Content translation UI into iGOT Karamayogi
+slug: /2023/Karmayogi/Integrate the Content translation UI into iGOT Karamayogi
 ---
 
 
