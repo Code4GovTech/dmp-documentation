@@ -75,85 +75,150 @@ module.exports = {
               to: "/docs/2023/AI Tools",
             },
             {
-              label: "Admin for Sunbird RC",
-              to: "/docs/2023/",
+              label: "Avni",
+              to: "/docs/2023/Avni",
             },
             {
-              label: "Centralized Access Control",
-              to: "/docs/2023/",
+              label: "Bahmni",
+              to: "/docs/2023/Bahmni",
             },
             {
-              label: "Yaus: Yet Another URL Shortener",
-              to: "/docs/2023/",
+              label: "BeckN",
+              to: "/docs/2023/BeckN",
             },
             {
-              label: "Shiksha",
-              to: "/docs/2023/",
+              label: "CARE",
+              to: "/docs/2023/CARE",
+            },
+                                                {
+              label: "cQube",
+              to: "/docs/2023/cQube",
             },
             {
-              label: "Sunbird QuML Player",
-              to: "/docs/2023/",
+              label: "CORD Network",
+              to: "/docs/2023/CORD Network",
             },
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "DDP",
+              to: "/docs/2023/DDP",
             },
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "DIGIT",
+              to: "/docs/2023/DIGIT",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "DIKSHA",
+              to: "/docs/2023/DIKSHA",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "DevOps Pipeline",
+              to: "/docs/2023/DevOps Pipeline",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Doc Generator",
+              to: "/docs/2023/Doc Generator",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Farmstack",
+              to: "/docs/2023/Farmstack",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Glific",
+              to: "/docs/2023/Glific",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Health Claims Exchange",
+              to: "/docs/2023/Health Claims Exchange",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Karmayogi",
+              to: "/docs/2023/Karmayogi",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "ODK Extension Collection",
+              to: "/docs/2023/ODK Extension Collection",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "QuML",
+              to: "/docs/2023/QuML",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Quiz Creator",
+              to: "/docs/2023/Quiz Creator",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Solve Ninja Chatbot",
+              to: "/docs/2023/Solve Ninja Chatbot",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Sunbird DevOps",
+              to: "/docs/2023/Sunbird DevOps",
             }, 
             {
-              label: "Machine Learning Platform",
-              to: "/docs/2023/",
+              label: "Sunbird ED",
+              to: "/docs/2023/Sunbird ED",
             },
+                        {
+              label: "Sunbird Knowlg",
+              to: "/docs/2023/Sunbird Knowlg",
+            },
+                        {
+              label: "Sunbird Lern",
+              to: "/docs/2023/Sunbird Lern",
+            },
+                        {
+              label: "Sunbird Obsrv",
+              to: "/docs/2023/Sunbird Obsrv",
+            },
+                        {
+              label: "Sunbird RC",
+              to: "/docs/2023/Sunbird RC",
+            },
+                        {
+              label: "Sunbird Saral",
+              to: "/docs/2023/Sunbird Saral",
+            },
+                        {
+              label: "Sunbird UCI",
+              to: "/docs/2023/Sunbird UCI",
+            },
+                        {
+              label: "Sunbird inQuiry",
+              to: "/docs/2023/Sunbird inQuiry",
+            },
+                        {
+              label: "Template creation portal",
+              to: "/docs/2023/Template creation portal",
+            },
+                        {
+              label: "Text2SQL",
+              to: "/docs/2023/Text2SQL",
+            },
+                        {
+              label: "TrustBot and POSHpal",
+              to: "/docs/2023/TrustBot and POSHpal",
+            },
+                        {
+              label: "TrustIn",
+              to: "/docs/2023/TrustIn",
+            },
+                        {
+              label: "Unnati",
+              to: "/docs/2023/Unnati",
+            },
+                        {
+              label: "WarpSQL",
+              to: "/docs/2023/WarpSQL",
+            },
+                                    {
+              label: "Workflow",
+              to: "/docs/2023/Workflow",
+            },
+                                    {
+              label: "Yaus",
+              to: "/docs/2023/Yaus",
+            },
+
           ],
         }
       ],
