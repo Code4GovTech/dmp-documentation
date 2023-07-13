@@ -9,9 +9,9 @@ slug: /2023/Yaus/Match the following Type Questions Implementation
 Arpan Gupta
 
 # Contact Info
-[Email](mailto: arpan6095@gmail.com)
-[Linked In](https://www.linkedin.com/in/gupta-arpan/)
-[GitHub](https://github.com/gupta-arpan)
+-   [Email](mailto:arpan6095@gmail.com)
+-   [LinkedIn](https://www.linkedin.com/in/gupta-arpan/)
+-   [GitHub](https://github.com/gupta-arpan)
 
 # Project Description
 
