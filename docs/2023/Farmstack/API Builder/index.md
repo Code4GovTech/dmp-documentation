@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/API Builder
+slug: /2023/Farmstack/API Builder
 ---
 
 
