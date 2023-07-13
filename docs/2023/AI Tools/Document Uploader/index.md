@@ -9,9 +9,9 @@ slug: /2023/AI Tools/Document Uploader
 Harshit Gupta
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+- [Email](mailto:hgupta1153@gmail.com)
+- [Linked In](https://www.linkedin.com/in/harshit-gupta-8a7b621a4/)
+- [GitHub](https://github.com/H4R5H1T-007)
 
 # Project Description
 
