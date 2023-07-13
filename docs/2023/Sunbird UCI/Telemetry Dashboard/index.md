@@ -9,9 +9,9 @@ slug: /2023/Sunbird UCI/Telemetry Dashboard
 Pratiksha Sankhe
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+- [Email](mailto:sankhepratiksha3@gmail.com)
+- [Linked In](https://www.linkedin.com/in/pratiksha-sankhe/)
+- [GitHub](https://github.com/psankhe28)
 
 # Project Description
 
