@@ -71,7 +71,7 @@ module.exports = {
             },
 
             {
-              label: "Competency Passbook",
+              label: "BeckN",
               to: "/docs/2023/",
             },
             {
@@ -94,6 +94,62 @@ module.exports = {
               label: "Sunbird QuML Player",
               to: "/docs/2023/",
             },
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            },
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
+            {
+              label: "Machine Learning Platform",
+              to: "/docs/2023/",
+            }, 
             {
               label: "Machine Learning Platform",
               to: "/docs/2023/",
