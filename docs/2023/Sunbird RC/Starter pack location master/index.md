@@ -9,9 +9,9 @@ slug: /2023/Sunbird RC/Starter Pack Location Master
 Anmol Agrawal
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+[Email](mailto:anmol2002.aa1@gmail.com)
+[Linked In](www.linkedin/in/anmode)
+[GitHub](www.github.com/anmode)
 
 # Project Description
 
