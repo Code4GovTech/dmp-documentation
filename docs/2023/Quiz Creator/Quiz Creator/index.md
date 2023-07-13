@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Frontend And Deep Linking
+slug: /2023/Quiz Creator/Quiz Creator
 ---
 
 
 # Author
-Rishabh Jain
+Prakhar Bansal
 
 # Contact Info
 <!-- - [Email](mailto:) -->
