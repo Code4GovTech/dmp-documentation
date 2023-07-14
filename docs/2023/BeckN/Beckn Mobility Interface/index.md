@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/BechN/Beckn Mobility Interface
+slug: /2023/BeckN/Beckn Mobility Interface
 ---
 
 
