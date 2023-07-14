@@ -6,7 +6,7 @@ slug: /2023/Yaus/Dashboard Builder
 
 
 # Author
-Rishabh Jain
+Jhansi S
 
 # Contact Info
 [Email](sammetajhansi15@gmail.com) 
