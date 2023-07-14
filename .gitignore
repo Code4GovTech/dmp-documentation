@@ -6,7 +6,8 @@ yarn.lock
 
 # Production
 /build
-
+/package-lock.json
+yarn.lock
 # Generated files
 .docusaurus
 .cache-loader
