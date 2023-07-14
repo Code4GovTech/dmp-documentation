@@ -11,7 +11,7 @@ Jahnab Dutta
 # Contact Info
 - [Email](mailto:dutta.4@iitj.ac.in)
 - [Linked In](https://www.linkedin.com/in/jahnab-dutta/)
-- [GitHub](www.github.com/JahnabDutta/)
+- [GitHub](https://github.com/JahnabDutta/)
 
 # Project Description
 
