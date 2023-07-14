@@ -1,12 +1,19 @@
 # Dependencies
 /node_modules
 
+package-lock.json
+yarn.lock
+
 # Production
 /build
 
 # Generated files
 .docusaurus
 .cache-loader
+
+# Ignoring npm package lock
+package-lock.json
+npm-shrinkwrap.json
 
 # Misc
 .DS_Store
@@ -20,4 +27,6 @@ yarn-debug.log*
 yarn-error.log*
 
 tags
+
+.idea
 yarn.lock
