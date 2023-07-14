@@ -1,14 +1,15 @@
 ---
 sidebar_position: 1
 title: Introduction
+slug: /2023/ABDM/CONSENT_MANAGEMENT
 ---
 
 
 # Author
-Rishabh Jain
+MOHD ZAID
 
 # Contact Info
-<!-- - [Email](mailto:) -->
+- [Email](mailto:)zaidiiit123@gmail.com
 <!-- - [Linked In]() -->
 <!-- - [GitHub]() -->
 

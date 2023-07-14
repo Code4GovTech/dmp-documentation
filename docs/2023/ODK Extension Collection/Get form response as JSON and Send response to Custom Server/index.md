@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/ODK Extension Collection/Get form response as JSON and Send response to Custom Server
 ---
 
 
