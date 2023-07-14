@@ -21,3 +21,6 @@ This can be redesigned keeping the following things in mind:
 - Notes should be shown in a chat popup ,expandable to a dedicated page.
 - New Notes should work as if they are Chat Notifications.
 - All the relevant parties should be notified of a new message.
+
+### Contributors Profile
+- [CARE Contributor's Profile - Bhavik Agarwal](https://contributors.ohc.network/contributors/Bhavik-ag)
