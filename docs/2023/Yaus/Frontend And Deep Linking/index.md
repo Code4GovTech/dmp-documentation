@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Yaus/Frontend And Deep Linking
 ---
 
 
