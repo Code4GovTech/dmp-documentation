@@ -11,7 +11,7 @@ Suyash Singh
 # Contact Info
 - [Email](mailto:suyashsingh.stem@gmail.com)
 - [Linked In](https://www.linkedin.com/in/suyashsingh-stem/)
-- [GitHub](www.github.com/geekgawd/)
+- [GitHub](https://www.github.com/geekgawd/)
 
 # Project Description
 
