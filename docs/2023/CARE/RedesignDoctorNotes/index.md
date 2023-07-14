@@ -8,7 +8,7 @@ slug: /2023/CARE/RedesignDoctorNotes
 Bhavik Agarwal
 
 ### Contact Info
-<!-- - [Email](mailto:) -->
+- [Email](mailto:21bcs056@iiitdmj.ac.in)
 - [Linked In](https://www.linkedin.com/in/bhavikagarwal2001/)
 - [GitHub](https://github.com/Bhavik-ag)
 
