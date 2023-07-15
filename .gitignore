@@ -29,5 +29,3 @@ yarn-error.log*
 tags
 
 .idea
-yarn.lock
-.yarn/
