@@ -9,9 +9,9 @@ slug: /2023/Sunbird Obsrv/revampTheObsrvSink
 Negrah
 
 # Contact Info
-[Email](mailto:negrahsingh32@gmail.com)
-[Linked In](https://www.linkedin.com/in/negrahs23/) 
-[GitHub](https://github.com/NEGRAH-S) 
+- [Email](mailto:negrahsingh32@gmail.com)
+- [Linked In](https://www.linkedin.com/in/negrahs23/) 
+- [GitHub](https://github.com/NEGRAH-S) 
 
 # Project Description
 
