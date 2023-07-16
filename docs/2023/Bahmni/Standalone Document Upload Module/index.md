@@ -9,9 +9,9 @@ slug: /2023/Bahmni/Standalone Document Upload Module
 Alpit Kumar
 
 # Contact Info
-[Email](mailto:alpitkumar85@gmail.com) 
-[Linked In](https://www.linkedin.com/in/alpit-kumar-301265224/) 
-[GitHub](https://github.com/alpit4) 
+- [Email](mailto:alpitkumar85@gmail.com) 
+- [Linked In](https://www.linkedin.com/in/alpit-kumar-301265224/) 
+- [GitHub](https://github.com/alpit4) 
 
 # Project Description
 
