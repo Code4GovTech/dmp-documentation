@@ -9,9 +9,9 @@ slug: /2023/DIKSHA/Digital Learners Passbook
 Abhirup Roy
 
 # Contact Info
- [Email](mailto:chandraniroy.sk@gmail.com) 
- [Linked In](https://www.linkedin.com/in/abhirup-roy-595501241/) 
- [GitHub](https://github.com/abhirupr123) 
+- [Email](mailto:chandraniroy.sk@gmail.com) 
+- [Linked In](https://www.linkedin.com/in/abhirup-roy-595501241/) 
+- [GitHub](https://github.com/abhirupr123) 
 
 # Project Description
 
