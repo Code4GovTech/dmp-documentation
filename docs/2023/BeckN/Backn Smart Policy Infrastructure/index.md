@@ -1,17 +1,17 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/BeckN/BPP Backend SDK & Boilerplate UI
+slug: /2023/BeckN/BeckN Policy Admin Api
 ---
 
 
 # Author
-Mohammad Sarfraz Alam
+Aakanksha Jaiswar
 
 # Contact Info
-- [Email](mailto:alamsarfraz422@gmail.com)
-- [Linked In](https://www.linkedin.com/in/sarfraz-alam-113575201/)
-- [GitHub](https://github.com/Sarfraz-droid)
+- [Email](mailto:aakankshajaiswar_it20b9_58@dtu.ac.in)
+- [Linked In](https://www.linkedin.com/in/aakanksha-jaiswar-949392201/)
+- [GitHub](https://github.com/aakanksha1801/)
 
 # Project Description
 
