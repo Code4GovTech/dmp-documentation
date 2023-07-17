@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: Introduction
-slug: /2023/Yaus/Frontend And Deep Linking
+title: sunbird-framework-management-ui-tool
+slug: /2023/Sunbird Knowlg/sunbird-framework-management-ui-tool
 ---
 
 
@@ -14,9 +14,9 @@ sunbird-framework-management-ui-tool
 
 
 # Contact Info
-<!-- - [Email](mailto:) -->
-<!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+[Email](mailto:pranavi123katakam@gmail.com)
+[Linked In](www.linkedin.com/in/pranavi-katakam35/)
+[GitHub](https://github.com/katakampranavi)
 
 # Project Description
 
