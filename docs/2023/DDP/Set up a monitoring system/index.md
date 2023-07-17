@@ -11,7 +11,7 @@ Jayanth Kumar
 # Contact Info
 - [Email](mailto:jayanthkumar1903@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/jayanth-kumar-14a4811b5/)
-[GitHub](github.com/jayanth-kumar-morem)
+- [GitHub](https://github.com/jayanth-kumar-morem)
 
 # Project Description
 
