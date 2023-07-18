@@ -19,4 +19,4 @@ sunbird-framework-management-ui-tool
 [GitHub](https://github.com/katakampranavi)
 
 # Project Description
-
+ I am developing a user-friendly React-based web application that simplifies framework management. Users can easily create, edit,update and delete frameworks using intuitive forms, with exceptional handling for error notifications and validations. This application streamlines framework management by providing a seamless user experience and a straightforward interface. With efficient functionalities, users can effortlessly manage their frameworks hassle-free.
