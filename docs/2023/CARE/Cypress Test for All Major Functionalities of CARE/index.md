@@ -15,3 +15,4 @@ Shivam Jha
 
 # Project Description
 
+The project's core goal is to enhance the dependability, stability, and performance of end-to-end testing by enhancing the coverage of Cypress tests for the platform, ensuring comprehensive testing of all functionalities across the system. This is intended to promote developer productivity and satisfaction, leading to a superior end product for the users.

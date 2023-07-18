@@ -11,7 +11,7 @@ Monishka Jha
 # Contact Info
 [Email](mailto:jhamonishka@gmail.com) 
 [LinkedIn](https://www.linkedin.com/in/monishka-jha-a0b418257/) 
- [GitHub](https://github.com/monishkajha17) 
+[GitHub](https://github.com/monishkajha17) 
 
 # Project Description
 
