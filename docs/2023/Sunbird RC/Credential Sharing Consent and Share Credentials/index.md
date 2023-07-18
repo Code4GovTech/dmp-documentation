@@ -10,8 +10,8 @@ Akshat Upadhyay
 
 # Contact Info
 
-[Email](mailto:akchatasr@gmail.com)
-[Linked In](https://www.linkedin.com/in/upadhyay-akshat/)
-[GitHub](https://github.com/ak-ironix)
+-   [Email](mailto:akchatasr@gmail.com)
+-   [Linked In](https://www.linkedin.com/in/upadhyay-akshat/)
+-   [GitHub](https://github.com/ak-ironix)
 
 # Project Description
