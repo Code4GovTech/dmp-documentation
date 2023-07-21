@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Karmayogi
+
 slug: /2023/Karmayogi/
 ---
 
