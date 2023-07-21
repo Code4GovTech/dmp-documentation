@@ -18,3 +18,5 @@ Our product [AmakrushAI](https://github.com/AmakrushAI) is a chatbot which solve
 To accomplish this, My Project consists of 2 part :-
 1. Chunking text into Meaningful text chunks given the text input (Text Segemntation)
 2. Retriving chunk texts simillar to the query given by user (Information Retrival)
+
+[Here's the Ticket on Github to learn more about my project.](https://github.com/Samagra-Development/ai-tools/issues/78)
