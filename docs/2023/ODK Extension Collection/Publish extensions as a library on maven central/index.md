@@ -9,9 +9,9 @@ slug: /2023/ODK Extension Collection/Publish extensions as a library on maven ce
 Jayesh Sharma
 
 # Contact Info
-jsharma7869@gmail.com
-https://www.linkedin.com/in/jayesh-sharma-333206193/
-https://github.com/jayesh212
+- [Email](mailto:jsharma7869@gmail.com)
+- [Linkedin](https://www.linkedin.com/in/jayesh-sharma-333206193/)
+- [Github](https://github.com/jayesh212)
 
 # Project Description
 Expose Extensions as a library on maven central
