@@ -14,4 +14,10 @@ Vinayak Raj Ranjan
 - [GitHub](https://github.com/vinayakjaas)
 
 # Project Description
+The project involves developing an automated content generation and translation
+system integrated with the IGOT (Integrated Government Online Training) Portals. The
+system is designed to generate specific types of content based on the
+Ministry/Department/Organization and the level/role of the official. Additionally, the
+system should support multiple languages as the medium of instruction, allowing users
+to select their preferred language.
 
