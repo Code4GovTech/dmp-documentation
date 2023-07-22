@@ -15,7 +15,7 @@ sunbird-framework-management-ui-tool
 
 # Contact Info
 [Email](mailto:pranavi123katakam@gmail.com)
-[Linked In](www.linkedin.com/in/pranavi-katakam35/)
+[Linked In](https://www.linkedin.com/in/pranavi-katakam35)
 [GitHub](https://github.com/katakampranavi)
 
 # Project Description
