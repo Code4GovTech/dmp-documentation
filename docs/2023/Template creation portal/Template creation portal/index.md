@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Template creation portal/Template creation portal
 ---
 
 
