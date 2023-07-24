@@ -15,3 +15,4 @@ Nupoor Shetye
 
 # Project Description
 
+The Bahmni Patient Portal project is an initiative by Bahmni to extend their services and scope to include patient-centric care into their ecosystem. This project entails creating a frontend repo using ReactJS that allows patients to view their medical history and records and a microservice using Spring Boot that serves as the backend.
