@@ -1,6 +1,9 @@
 # Dependencies
 /node_modules
 
+package-lock.json
+yarn.lock
+
 # Production
 /build
 
@@ -29,3 +32,4 @@ tags
 
 .idea
 yarn.lock
+.yarn/
