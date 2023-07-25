@@ -14,4 +14,9 @@ Sudheesh Kumar
 - [GitHub](https://github.com/Sudheesh2609)
 
 # Project Description
-The Beckn Energy Interface is an API that emulates the behavior of an Open Energy Network like the Unified Energy Interface. BAPs can build rich, integrated experiences by combining services offered by multiple BPPs on the network. BPPs can build complex products by analyzing the nature of input from multiple BAPs. This is an important step in the setup and expansion of open networks. Businesses can test their implementations for protocol compliance by plugging into this sandbox.
+- [Project Ticket](https://github.com/beckn/DENT-Protocol/issues/1)
+- The Beckn Energy Interface is an API that emulates the behavior of an Open Energy Network like the Unified Energy Interface. 
+- BAPs can build rich, integrated experiences by combining services offered by multiple BPPs on the network. 
+- BPPs can build complex products by analyzing the nature of input from multiple BAPs. 
+- This is an important step in the setup and expansion of open networks. 
+- Businesses can test their implementations for protocol compliance by plugging into this sandbox.
