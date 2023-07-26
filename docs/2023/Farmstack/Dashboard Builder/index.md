@@ -10,8 +10,8 @@ Jhansi S
 
 # Contact Info
 
-- [Email](mailto:sammetajhansi15@gmail.com)
-- [Linked In](https://www.linkedin.com/in/jhansi-sammeta-a08024203/)
-- [GitHub](https://github.com/jhansi1104)
+[Email](mailto:sammetajhansi15@gmail.com)
+[Linked In](https://www.linkedin.com/in/jhansi-sammeta-a08024203/)
+[GitHub](https://github.com/jhansi1104)
 
 # Project Description
