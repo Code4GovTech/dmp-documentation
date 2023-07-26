@@ -1,7 +1,8 @@
  ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Sunbird ed /Implement sso flow using npm
+slug:/2023/Sunbird ED/Implement Independent SSO Flow on NPM Package
+
 ---
 
 
