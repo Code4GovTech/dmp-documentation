@@ -4,7 +4,6 @@ title: Introduction
 slug: /2023/AI Tools/Deployment Optimization
 ---
 
-
 # Author
 Manas Sivakumar
 
@@ -14,5 +13,6 @@ Manas Sivakumar
 - [GitHub](https://github.com/Manas23601)
 
 # Project Description
+Set-up a pipeline and workflow to automate infrastructure initialization
 
 # Project Goals

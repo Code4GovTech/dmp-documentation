@@ -8,7 +8,7 @@ title: Introduction
 Prabhav Chopra
 
 # Contact Info
-- [Mail](mailto:prabhavracer44@gmail.com)
+- [Email](mailto:prabhavracer44@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/prabhav-chopra/)
 - [GitHub](https://github.com/prabs3257)
 
