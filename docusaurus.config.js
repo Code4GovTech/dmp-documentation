@@ -3,8 +3,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const year = new Date().getFullYear();
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "Code for GovTech projects",
-  tagline: "Updates about activites done by Code for GovTech students.",
+  title: "Code for GovTech (C4GT)",
+  tagline: "Updates about activites done by students.",
   url: "http://tech.samagragovernance.in/",
   baseUrl: "/",
   onBrokenLinks: "throw",
