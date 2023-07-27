@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
+slug: /2023/BeckN/Beckn in a box
 ---
 
 # Author
