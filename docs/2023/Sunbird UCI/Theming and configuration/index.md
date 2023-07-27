@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/Sunbird UCI/Tushar Banik
+slug: /2023/Sunbird UCI/Theming and configuration
 ---
 
 
