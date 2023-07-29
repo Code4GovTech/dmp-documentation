@@ -14,4 +14,4 @@ Shlok
 - [GitHub](https://github.com/ShlokRana)
 
 # Project Description
-
+The project's objective is to develop a standalone AI tool that can take in a story/chapter as input in English and auto generate questions in QuML format.
