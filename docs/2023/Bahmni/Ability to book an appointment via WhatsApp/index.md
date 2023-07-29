@@ -16,4 +16,3 @@ Aniket Bhatia
 # Project Description
 
 Implementing a WhatsApp based appointment booking system for Patients.
-
