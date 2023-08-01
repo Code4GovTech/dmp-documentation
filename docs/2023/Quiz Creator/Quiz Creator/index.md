@@ -17,9 +17,10 @@ Prakhar Bansal
 Prakhar Bansal
 
 # Contact Info
+
 [Email](mailto:prakharb56@gmail.com)
-[Linked In](https://www.linkedin.com/in/pb3031/) 
-[GitHub](https://github.com/Prakhar-commits) 
+[Linked In](https://www.linkedin.com/in/pb3031/)
+[GitHub](https://github.com/Prakhar-commits)
 
 
 # Project Description
