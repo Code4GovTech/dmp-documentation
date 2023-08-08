@@ -14,4 +14,5 @@ Sahajpreet Singh
 - [GitHub](https://github.com/photon0205/)
 
 # Project Description
-
+- The API Builder project aims to develop a robust and scalable REST API framework using Python, Django, and ReactJS. The project focuses on creating a user-friendly interface for building and managing APIs, allowing developers to efficiently create, deploy, and maintain APIs for their applications.
+- The project will involve designing and implementing key features such as API endpoint creation, request/response handling, authentication and access control, error handling, documentation generation, and versioning. The frontend interface will provide a user-friendly experience for configuring API endpoints, managing access permissions, and monitoring API usage.
