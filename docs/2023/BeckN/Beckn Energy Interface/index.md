@@ -15,8 +15,7 @@ Sudheesh Kumar
 
 # Project Description
 - [Project Ticket](https://github.com/beckn/DENT-Protocol/issues/1)
-- The Beckn Energy Interface is an API that emulates the behavior of an Open Energy Network like the Unified Energy Interface. 
-- BAPs can build rich, integrated experiences by combining services offered by multiple BPPs on the network. 
-- BPPs can build complex products by analyzing the nature of input from multiple BAPs. 
-- This is an important step in the setup and expansion of open networks. 
-- Businesses can test their implementations for protocol compliance by plugging into this sandbox.
+- [Decentralized Energy Transaction Protocol (DENT)](https://github.com/beckn/DENT-Protocol)
+- The Beckn Energy Interface is an API that emulates the behavior of an Open Energy Network like the Unified Energy Interface.
+- DENT Protocol (or simply DENT) enables the creation of a decentralized / federated network of platforms that perform interoperable commercial transactions that result in the transfer of energy from a energy producer to an energy provider.
+
