@@ -20,6 +20,6 @@ Sumit Maithani
  # Milestones
 
 - [x] Understanding Requirements
-- [ ] Create a basic design for the CP
+- [x] Create a basic design for the CP
 - [ ] Implementing the app and integrating with our backends
 - [ ] Testing
