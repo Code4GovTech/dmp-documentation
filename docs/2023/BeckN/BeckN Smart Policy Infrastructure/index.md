@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction
-slug: /2023/BeckN/BeckN Policy Admin Api
+slug: /2023/BeckN/BeckN Smart Policy Infrastructure
 ---
 
 
