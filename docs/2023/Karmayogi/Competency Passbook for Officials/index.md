@@ -21,5 +21,4 @@ Sumit Maithani
 
 - [x] Understanding Requirements
 - [x] Create a basic design for the CP
-- [ ] Implementing the app and integrating with our backends
-- [ ] Testing
+- [x] Testing
