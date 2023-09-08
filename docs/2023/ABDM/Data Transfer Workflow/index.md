@@ -34,5 +34,6 @@ Aman Gadadare
 - Store audit logs for consent and data flows.
 - Governance around data retention and policies
 
-Find More About Project [Here](https://github.com/atulai-sg/abdm-sdk/issues/5)
-
+Find More About Project Here
+1.Check New Repo [Here](https://github.com/atulai-sg/abdm-wrapper/issues/5)
+2.Check Old Repo [Here](https://github.com/atulai-sg/abdm-sdk/issues/5)
