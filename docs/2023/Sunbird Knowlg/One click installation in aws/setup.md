@@ -20,7 +20,7 @@ title: Setup
 ### 4. Run it :checkered_flag:
 
 - Run `sh ./local-setup.sh` while you being in the root(knowledge-platform) dictionary.
-- Run `sh create` in the path Knowledge-platform/sunbird-automation/ and choose env for which you want to setup.
+- Run `sh create` in the path `Knowledge-platform/sunbird-automation/terraform` and choose env for which you want to setup.
 
 ### 5. For testing purpose 💥
 
