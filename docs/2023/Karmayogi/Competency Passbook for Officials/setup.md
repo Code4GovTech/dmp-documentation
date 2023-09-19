@@ -4,18 +4,18 @@ title: Setup
 ---
 
 ### 1. Fork it :fork_and_knife:
-Fork the [project repository](https://github.com/Sumitmaithani/competency-passbook) on GitHub by clicking the "Fork" button in the top-right corner.
+Fork the [project repository](https://github.com/sunbird-cb/c4gt_passbook) on GitHub by clicking the "Fork" button in the top-right corner.
 
 ### 2. Clone it :busts_in_silhouette:
 Clone the forked repository to your local machine using the following command:
 ```bash
-git clone https://github.com/your-username/compentency-passbook.git
+git clone https://github.com/your-username/c4gt_passbook.git
 ```
 
 ### 3. Set it up :arrow_up:
 Navigate to the project directory:
 ```bash
-cd compentency-passbook
+cd c4gt_passbook
 ```
 
 ### 4. Run it :checkered_flag:
