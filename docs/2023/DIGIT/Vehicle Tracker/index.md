@@ -14,4 +14,4 @@ Achintya
 - [GitHub](https://github.com/achintya-7)
 
 # Project Description
-
+This is the vehicle tracking project made for the DIGIT team for The Sanitation Project. This project is made using Flutter and is supported on both Android and iOS. The project is made to track the vehicles of the sanitation workers and to keep a record of the routes taken by them. The project also has a web app made using ReactJS which is used to view the routes taken by the vehicles on a map.
