@@ -15,3 +15,6 @@ Pratyush Kumar
 - [GitHub](https://github.com/bruno-noir/)
 
 # Project Description
+
+This is to enable discovery of Tutors and Mentors that are registered in a DSEP network of Tutors/Mentors through Sunbird ED Application. Tutoring can be helpful for students who need additional support as it provides Individualized attention, Personalized learning. Online Tutoring is more flexible as it is easy for scheduling sessions at convenient times and locations. Moreover, it can make learning more engaging and interactive, with the use of multimedia resources, virtual whiteboards, and other digital tools.
+
