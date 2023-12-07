@@ -12,6 +12,9 @@ Vansh
 - [Linked In](https://www.linkedin.com/in/vansh-kamboj-473136228/)
 - [GitHub](https://github.com/Vansh-Kamboj)
 
+# Contributions
+- GitHub Repo: https://github.com/kiranma72/loinc-india
+
 # Project Description
 - The LOINC India project aims to facilitate the integration of LOINC (Logical 
  Observation Identifiers Names and Codes) into Lab Information Management 
