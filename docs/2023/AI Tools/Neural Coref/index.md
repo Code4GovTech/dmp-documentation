@@ -13,6 +13,12 @@ Sai Gopal Reddy Kovvuri
 - [Linked In](https://www.linkedin.com/in/sai-gopal-reddy-kovvuri-962016224/)
 - [GitHub](https://github.com/ksgr5566)
 
+# Contributions
+https://github.com/Samagra-Development/ai-tools/pulls?q=is%3Apr+author%3Aksgr5566+
+
+**Additional contributions:**
+https://github.com/ksgr5566/AutoTuneNLP/tree/main
+
 # Project Description
 
 **Initial scope:**
