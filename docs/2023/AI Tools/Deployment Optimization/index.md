@@ -14,5 +14,3 @@ Manas Sivakumar
 
 # Project Description
 Set-up a pipeline and workflow to automate infrastructure initialization
-
-# Project Goals

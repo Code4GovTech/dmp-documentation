@@ -13,5 +13,3 @@ Peddi Sai Lohith
 - [Email](mailto:peddilohith13092002@gmail.com)
 - [Linked In](https://www.linkedin.com/in/peddi-lohith-3a0851203/)
 - [GitHub](https://github.com/lohith1392)
-
-# Project Description
