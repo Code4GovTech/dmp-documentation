@@ -10,7 +10,6 @@ Suyash Kumar Dubey
 # Contact Info
 <!-- - [Email](mailto:) -->
 <!-- - [Linked In]() -->
-<!-- - [GitHub]() -->
+- [GitHub](https://github.com/suyashdube)
 
-# Project Description
 
