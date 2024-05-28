@@ -1,31 +1,141 @@
-name: Test and deploy
+name: Build
+
+env:
+  APP_NAME: CMS-BACKEND-API
+  PROJECT_NAME: CMS-BACKEND-API
+  DOCKER_COMPOSE_PATH: /root/app/docker-compose.yml
+  REGISTRY: ghcr.io
+  DOCKER_REGISTRY: ghcr.io/code4govtech/dmp-cms-backend-api
+  DOT_ENV_FILE_NAME: env.dmp-cms-backend-api
+
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - devops
+      - dev
+      - main
+
+permissions:
+  contents: write
+  packages: write
+
 
 jobs:
-  build:
-
+  set_vars:
+    name: Set Environment Variables
     runs-on: ubuntu-latest
+    outputs:
+      TAG_LATEST: ${{ steps.tag_values.outputs.TAG_LATEST }}
+      TAG_ENV_COMMIT: ${{ steps.tag_values.outputs.TAG_ENV_COMMIT }}
+      APP_ENV: ${{ steps.tag_values.outputs.APP_ENV }}
+    steps:
+      - name: Set Docker Image Tags
+        id: tag_values
+        run: |
+          case "${{ github.ref }}" in
+            'refs/heads/main')
+              echo "TAG_LATEST=prod-latest" >> $GITHUB_OUTPUT
+              echo "TAG_ENV_COMMIT=prod-${GITHUB_SHA:0:5}" >> $GITHUB_OUTPUT
+              echo "APP_ENV=PROD" >> $GITHUB_OUTPUT
+              ;;
+            'refs/heads/devops')
+              echo "TAG_LATEST=dev-latest" >> $GITHUB_OUTPUT
+              echo "TAG_ENV_COMMIT=dev-${GITHUB_SHA:0:5}" >> $GITHUB_OUTPUT
+              echo "APP_ENV=DEV" >> $GITHUB_OUTPUT
+              ;;
+            'refs/heads/dev')
+              echo "TAG_LATEST=dev-latest" >> $GITHUB_OUTPUT
+              echo "TAG_ENV_COMMIT=dev-${GITHUB_SHA:0:5}" >> $GITHUB_OUTPUT
+              echo "APP_ENV=DEV" >> $GITHUB_OUTPUT
+              ;;
+          esac
 
-    strategy:
-      matrix:
-        node-version: [16.x]
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: [set_vars]
+    permissions:
+      contents: read
+      packages: write
+    env:
+      TAG_LATEST: ${{ needs.set_vars.outputs.TAG_LATEST }}
+      TAG_ENV_COMMIT: ${{ needs.set_vars.outputs.TAG_ENV_COMMIT }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # - name: Login to GitHub Packages
+      #   run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set Docker Tags
+        uses: actions/setup-node@v2
+
+      - name: Read Secrets
+        run: |
+          touch .env
+          mv .env ${{ env.DOT_ENV_FILE_NAME }}
+
+      - name: Copy env file to DEV Server
+        uses: appleboy/scp-action@v0.1.7
+        if: needs.set_vars.outputs.APP_ENV == 'DEV'
+        with:
+          host: ${{ vars.DEV_SERVER_HOST }}
+          username: ${{ vars.DEV_SERVER_USERNAME }}
+          key: ${{ secrets.DEV_SSH_PRIVATE_KEY }}
+          port: ${{ vars.DEV_SERVER_PORT }}
+          source: "${{ env.DOT_ENV_FILE_NAME }}"
+          target: /root/app/
+
+      - name: Build ${{ env.APP_NAME }} Docker image
+        run: |
+          docker build -t ${{ env.DOCKER_REGISTRY }}:${{ env.TAG_LATEST }} .
+
+      - name: Add tag to Docker image
+        run: |
+          echo ${{ github.sha }}
+          docker tag ${{ env.DOCKER_REGISTRY }}:${{ env.TAG_LATEST }} ${{ env.DOCKER_REGISTRY }}:${{ env.TAG_ENV_COMMIT }}
+
+      - name: Push Docker image to GitHub Packages
+        run: |
+          docker push ${{ env.DOCKER_REGISTRY }}:${{ env.TAG_LATEST }}
+          docker push ${{ env.DOCKER_REGISTRY }}:${{ env.TAG_ENV_COMMIT }}
+
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'push' && github.ref_type == 'branch'
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Deploy to DevOps/Dev Environment
+        if: github.ref == 'refs/heads/devops' || github.ref == 'refs/heads/dev'
+        uses: appleboy/ssh-action@v1.0.3
+        env:
+          DOCKER_COMPOSE_PATH: ${{ env.DOCKER_COMPOSE_PATH }}
+          APP_NAME: ${{ env.APP_NAME }}
+          DOCKER_REGISTRY: ${{ env.DOCKER_REGISTRY }}
+        with:
+          host: ${{ vars.DEV_SERVER_HOST }}
+          username: ${{ vars.DEV_SERVER_USERNAME }}
+          key: ${{ secrets.DEV_SSH_PRIVATE_KEY }}
+          port: ${{ vars.DEV_SERVER_PORT }}
+          allenvs: true
+          script_stop: true
+          envs: DOCKER_COMPOSE_PATH,APP_NAME,DOCKER_REGISTRY
+          script: |
+            echo "Docker Compose Path $DOCKER_COMPOSE_PATH"
+            docker compose -f $DOCKER_COMPOSE_PATH pull
+            docker compose -f $DOCKER_COMPOSE_PATH up -d
 
-    - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: yarn install --frozen-lockfile 
-
-    - name: Build
-      run: yarn build
+      - name: Deploy to Prod environment
+        if: github.ref == 'refs/heads/main'
+        run: echo "Deploying to Kubernetes"
