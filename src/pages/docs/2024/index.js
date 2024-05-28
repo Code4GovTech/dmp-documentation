@@ -26,7 +26,7 @@ function C4GT2024() {
         className="main-wrapper docs-wrapper docs-doc-page"
         // style={{ height: "60vh" }}
       >
-        <div className="docPage_node_modules-@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module">
+        <div className="docPage_node_modules-@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module" style={{width:"100%", display:"flex"}}>
           <aside className="theme-doc-sidebar-container docSidebarContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module">
             <div className="sidebar_node_modules-@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module">
               <nav className="menu thin-scrollbar menu_node_modules-@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module">
