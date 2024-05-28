@@ -1,19 +1,21 @@
-name: Test and deploy
+name: Build
 
 env:
-  APP_NAME: CMS-FE
-  PROJECT_NAME: CMS-FE
+  APP_NAME: CMS-BACKEND-API
+  PROJECT_NAME: CMS-BACKEND-API
   DOCKER_COMPOSE_PATH: /root/app/docker-compose.yml
   REGISTRY: ghcr.io
-  DOCKER_REGISTRY: ghcr.io/code4govtech/dmp-cms-fe
-  DOT_ENV_FILE_NAME: env.dmp-cms-fe
+  DOCKER_REGISTRY: ghcr.io/code4govtech/dmp-cms-backend-api
+  DOT_ENV_FILE_NAME: env.dmp-cms-backend-api
+
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - devops
       - dev
+      - main
 
 permissions:
   contents: write
@@ -53,19 +55,19 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: [ set_vars ]
+    needs: [set_vars]
     permissions:
       contents: read
       packages: write
     env:
       TAG_LATEST: ${{ needs.set_vars.outputs.TAG_LATEST }}
       TAG_ENV_COMMIT: ${{ needs.set_vars.outputs.TAG_ENV_COMMIT }}
-    strategy:
-      matrix:
-        node-version: [ 16.x ]
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
+
+      # - name: Login to GitHub Packages
+      #   run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
@@ -76,6 +78,11 @@ jobs:
 
       - name: Set Docker Tags
         uses: actions/setup-node@v2
+
+      - name: Read Secrets
+        run: |
+          touch .env
+          mv .env ${{ env.DOT_ENV_FILE_NAME }}
 
       - name: Copy env file to DEV Server
         uses: appleboy/scp-action@v0.1.7

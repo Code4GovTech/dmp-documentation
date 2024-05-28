@@ -1,20 +1,10 @@
-# This could be very wrong.
 name: "docusaurus"
 services:
-  caddy:
+  serve:
     build:
       context: .
-      target: caddy
+      target: serve
     ports:
-      - "80:80"
-      - "443:443"
+      - "3000:3000"
     environment:
       - NODE_ENV=production
-      - DOCUSAURUS_DOMAIN=docusaurus.example
-      - DOCUSAURUS_EMAIL=letsencrypt@docusaurus.example
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
-volumes:
-  caddy_data:
-  caddy_config:
