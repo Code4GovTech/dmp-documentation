@@ -220,6 +220,17 @@ module.exports = {
             },
 
           ],
+        },
+        {
+          label: "2024",
+          position: "left",
+          to: "/docs/2024/",
+          items: [
+            {
+              label: "SamagraX",
+              to: "/docs/2024?id=SamagraX",
+            },
+          ]
         }
       ],
     },
