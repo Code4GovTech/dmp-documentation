@@ -3,6 +3,7 @@ import Layout from "@theme/Layout";
 import C4GT2024Page from "../../../components/C4GT2024Page";
 import ProjectDescription from "../../../components/ProjectDescription";
 import SubProjectDescription from "../../../components/SubDescription";
+import './index.css';
 // import { useLocation, useParams } from 'react-router-dom';
 
 function C4GT2024() {
@@ -24,12 +25,11 @@ function C4GT2024() {
     <Layout>
       <div
         className="main-wrapper docs-wrapper docs-doc-page"
-        // style={{ height: "60vh" }}
       >
-        <div className="docPage_node_modules-@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module" style={{width:"100%", display:"flex"}}>
-          <aside className="theme-doc-sidebar-container docSidebarContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module">
-            <div className="sidebar_node_modules-@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module">
-              <nav className="menu thin-scrollbar menu_node_modules-@docusaurus-theme-classic-lib-next-theme-DocSidebar-styles-module">
+        <div style={{width:"100%", display:"flex"}}>
+          <aside className="theme-doc-sidebar-container sidebar-container-2024">
+            <div className="sidebar-styles">
+              <nav className="menu thin-scrollbar menu_styles">
                 <ul className="theme-doc-sidebar-menu menu__list">
                   <li className="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item">
                     <div
@@ -108,7 +108,7 @@ function C4GT2024() {
           </aside>
           <main
             style={{ height: "100%" }}
-            className="docMainContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module"
+            className="main-container"
           >
             {currentTab == "c4gt" ? (
                       <C4GT2024Page />

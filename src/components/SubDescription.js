@@ -4,8 +4,8 @@ function SubProjectDescription({ selectedProject }) {
   return (
     <div className="container padding-top--md padding-bottom--lg">
       <div className="row">
-        <div className="col docItemCol_node_modules-@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module">
-          <div className="docItemContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module">
+        <div className="col width">
+          <div>
             <article>
               <div className="theme-doc-markdown markdown">
                 <header>
@@ -78,7 +78,7 @@ function SubProjectDescription({ selectedProject }) {
         </div>
         <div className="col col--3">
           <div
-            className="tableOfContents_node_modules-@docusaurus-theme-classic-lib-next-theme-TOC-styles-module thin-scrollbar theme-doc-toc-desktop"
+            className="table-container thin-scrollbar theme-doc-toc-desktop"
             style={{
               display: "flex",
               alignItems: "center",

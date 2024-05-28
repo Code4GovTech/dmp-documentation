@@ -4,17 +4,17 @@ function C4GT2024Page() {
   return (
     <div className="container padding-top--md padding-bottom--lg">
               <div className="row">
-                <div className="col docItemCol_node_modules-@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module">
-                  <div className="docItemContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module">
+                <div className="col width">
+                  <div>
     <article>
       <nav
-        className="theme-doc-breadcrumbs breadcrumbsContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocBreadcrumbs-styles-module"
+        className="theme-doc-breadcrumbs" style={{marginBottom:".4rem"}}
         aria-label="breadcrumbs"
       >
         <ul className="breadcrumbs">
           <li className="breadcrumbs__item">
             <a
-              className="breadcrumbs__link breadcrumbsItemLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocBreadcrumbs-styles-module"
+              className="breadcrumbs__link breadcrumbs-items"
               href="/"
             >
               🏠
@@ -22,7 +22,7 @@ function C4GT2024Page() {
           </li>
           <li className="breadcrumbs__item breadcrumbs__item--active">
             <a
-              className="breadcrumbs__link breadcrumbsItemLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocBreadcrumbs-styles-module"
+              className="breadcrumbs__link breadcrumbs-items"
               // href="/docs/2024/"
               style={{cursor:"pointer"}}
             >

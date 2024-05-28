@@ -4,25 +4,25 @@ function ProjectDescription() {
   return (
     <div className="container padding-top--md padding-bottom--lg" style={{ height: "60vh" }}>
               <div className="row">
-                <div className="col docItemCol_node_modules-@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module">
-                  <div className="docItemContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocItem-styles-module">
+                <div className="col width">
+                  <div>
     <article>
       <nav
-        class="theme-doc-breadcrumbs breadcrumbsContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocBreadcrumbs-styles-module"
+        className="theme-doc-breadcrumbs" style={{marginBottom:".4rem"}}
         aria-label="breadcrumbs"
       >
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
+        <ul className="breadcrumbs">
+          <li className="breadcrumbs__item">
             <a
-              class="breadcrumbs__link breadcrumbsItemLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocBreadcrumbs-styles-module"
+              className="breadcrumbs__link breadcrumbs-items"
               href="/"
             >
               🏠
             </a>
           </li>
-          <li class="breadcrumbs__item breadcrumbs__item--active">
+          <li className="breadcrumbs__item breadcrumbs__item--active">
             <a
-              class="breadcrumbs__link breadcrumbsItemLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocBreadcrumbs-styles-module"
+              className="breadcrumbs__link breadcrumbs-items"
               // href="/docs/2024/"
               style={{cursor:"pointer"}}
             >
