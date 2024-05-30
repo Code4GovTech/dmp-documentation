@@ -9,7 +9,7 @@ function SubProjectDescription({ selectedProject }) {
             <article>
               <div className="theme-doc-markdown markdown">
                 <header>
-                  <h1>SamagraX sample project {selectedProject}</h1>
+                  <h1>{selectedProject}</h1>
                 </header>
                 <h2>Overview</h2>
                 <p>

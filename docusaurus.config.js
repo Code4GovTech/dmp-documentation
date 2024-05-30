@@ -227,8 +227,8 @@ module.exports = {
           to: "/docs/2024/",
           items: [
             {
-              label: "SamagraX",
-              to: "/docs/2024?id=SamagraX",
+              label: "VedantKhairnar",
+              to: "/docs/2024?id=VedantKhairnar",
             },
           ]
         }
