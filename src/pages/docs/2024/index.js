@@ -17,14 +17,14 @@ function C4GT2024() {
     const urlParams = new URLSearchParams(queryString);
     const product = urlParams.get("id")?urlParams.get("id"):"c4gt";
     setCurrentTab(()=>product)
-    fetch("https://api.dev.c4gt.samagra.io/api/issues", {
+    fetch("https://api.dev.c4gt.samagra.io/issues", {
         method: 'GET',
       })
       .then(response => {
         return response.json();
       })
       .then(data => {
-        setIssueData(()=>data.issues)
+        setIssueData(()=>data)
       })
       .catch(error => {
         console.log("error",error.message);
@@ -103,14 +103,14 @@ function C4GT2024() {
                         {data?.issues.map((d,i)=>{
                           return <li key={i} className="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item">
                           <div
-                            className={`menu__link ${(currentTab == "subDescription" && selectedProject == d.repo+i) ? "menu__link--active":""}`}
+                            className={`menu__link ${(currentTab == "subDescription" && selectedProject == d.name) ? "menu__link--active":""}`}
                             style={{ cursor: "pointer" }}
                             onClick={() => {
                               setCurrentTab(()=>"subDescription");
-                              setSelectedProject(()=>d.repo+i);
+                              setSelectedProject(()=>d.name);
                             }}
                           >
-                           {d.repo}
+                           {d.name}
                           </div>
                         </li>
                         })}

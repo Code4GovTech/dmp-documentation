@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function ProjectDescription({issueDescription}) {
   const [description,setDescription] = useState(null)
   useEffect(()=>{
-    fetch(`https://api.dev.c4gt.samagra.io/api/issues/${issueDescription}`, {
+    fetch(`https://api.dev.c4gt.samagra.io/issues/${issueDescription}`, {
         method: 'GET',
       })
       .then(response => {

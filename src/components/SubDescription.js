@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function SubProjectDescription({ selectedProject }) {
+  const [description,setDescription] = useState(null)
+  useEffect(()=>{
+    fetch(`https://api.dev.c4gt.samagra.io/issues/VedantKhairnar/1`, {
+        method: 'GET',
+      })
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
+        setDescription(()=>data)
+      })
+      .catch(error => {
+        console.log("error",error.message);
+      });
+},[])
   return (
     <div className="container padding-top--md padding-bottom--lg">
-      <div className="row">
+      {description && <div className="row">
         <div className="col width">
           <div>
             <article>
@@ -13,9 +28,7 @@ function SubProjectDescription({ selectedProject }) {
                 </header>
                 <h2>Overview</h2>
                 <p>
-                  At SamagraX, we are building the next-gen, federated,
-                  privacy-aware, interoperable platforms that will impact the
-                  lives of millions of citizens across the country.
+                  {description?.description}
                 </p>
                 <h2>Weekly Tasks and Learnings</h2>
                 <div
@@ -41,35 +54,20 @@ function SubProjectDescription({ selectedProject }) {
                     <tr>
                       <th align="left">PR Name</th>
                       <th align="left">Link</th>
-                      <th align="left">Raised/Merged</th>
+                      <th align="left">Status</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td align="left">Test name 1</td>
+                    {description?.pr_details?.pr_details?.map((tdata,i)=>{
+                      return <tr key={i}>
+                      <td align="left">{tdata.name}</td>
                       <td align="left">
-                        <a href="/docs/2024">SamagraX sample project Link 1</a>
+                        <a href={tdata.link}>{tdata.link}</a>
                       </td>
-                      <td align="left">xyz</td>
+                      <td align="left">{tdata.status}</td>
                     </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td align="left">Test name 2</td>
-                      <td align="left">
-                        <a href="/docs/2024">SamagraX sample project Link 2</a>
-                      </td>
-                      <td align="left">xyz</td>
-                    </tr>
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td align="left">Test name 3</td>
-                      <td align="left">
-                        <a href="/docs/2024">SamagraX sample project Link 3</a>
-                      </td>
-                      <td align="left">xyz</td>
-                    </tr>
+                    })}
+                    
                   </tbody>
                 </table>
               </div>
@@ -87,20 +85,20 @@ function SubProjectDescription({ selectedProject }) {
             }}
           >
             <div className="progress-bar-container">
-              <div className="progress-bar" style={{ width: `70%` }}>
-                70%
+              <div className="progress-bar" style={{ width: description?.overall_progress }}>
+                {description?.overall_progress}
               </div>
             </div>
             <table>
               <tbody>
                 <tr>
-                  <th>Contributor Name</th>
+                  <th>{description?.contributor_name}</th>
                 </tr>
                 <tr>
-                  <th>Mentor Name</th>
+                  <th>{description?.name}</th>
                 </tr>
                 <tr>
-                  <th>Organisation</th>
+                  <th>{description?.org_name}</th>
                 </tr>
               </tbody>
             </table>
@@ -109,7 +107,7 @@ function SubProjectDescription({ selectedProject }) {
         <div>Organisation</div></div> */}
           </div>
         </div>
-      </div>
+      </div>}
     </div>
   );
 }
