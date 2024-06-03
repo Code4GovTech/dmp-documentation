@@ -16,6 +16,9 @@
     position: sticky;
     top: calc(4.75rem);
 }
+.right-side-table{
+    padding-right: 0;
+}
 @media screen and (min-width: 997px) {
     .sidebar-container-2024{
             display: block;
@@ -51,4 +54,12 @@
     .breadcrumbs-items{
         --ifm-breadcrumb-size-multiplier: 0.8;
     }
+    
+.right-side-table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 56px;
+}
   }
