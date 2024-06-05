@@ -1,3 +1,4 @@
+require('dotenv').config()
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const year = new Date().getFullYear();
@@ -14,10 +15,10 @@ module.exports = {
   projectName: "c4gt",
   themeConfig: {
     navbar: {
-      title: "Home",
+      // title: "DMP",
       logo: {
-        alt: "Home",
-        src: "img/logo.png",
+        alt: "DMP",
+        src: "img/C4GT_Logo_Text.png",
       },
       items: [
         {
@@ -220,6 +221,17 @@ module.exports = {
             },
 
           ],
+        },
+        {
+          label: "2024",
+          position: "left",
+          to: "/docs/2024/",
+          items: [
+            {
+              label: "VedantKhairnar",
+              to: "/docs/2024/org?id=VedantKhairnar",
+            },
+          ]
         }
       ],
     },
@@ -285,4 +297,8 @@ module.exports = {
       },
     ],
   ],
+  customFields: {
+    API_BASE_URL: process.env.API_BASE_URL, // Assuming you have REACT_APP_API_URL set in your environment
+    API_AUTH_KEY: process.env.API_AUTH_KEY,
+  },
 };

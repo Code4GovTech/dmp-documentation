@@ -8,6 +8,7 @@ import ParticipantImages from "../components/ParticipantImages";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  console.log(siteConfig.customFields.API_BASE_URL)
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
