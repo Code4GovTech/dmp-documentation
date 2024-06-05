@@ -60,6 +60,8 @@ jobs:
     env:
       TAG_LATEST: ${{ needs.set_vars.outputs.TAG_LATEST }}
       TAG_ENV_COMMIT: ${{ needs.set_vars.outputs.TAG_ENV_COMMIT }}
+      API_BASE_URL: ${{ vars[format('APP_{0}_API_BASE_URL', needs.set_vars.outputs.APP_ENV)] }}
+      API_AUTH_KEY: ${{ secrets[format('APP_{0}_API_AUTH_KEY', needs.set_vars.outputs.APP_ENV)] }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -79,7 +81,9 @@ jobs:
 
       - name: Read Secrets
         run: |
-          touch .env
+          echo "API_BASE_URL=${API_BASE_URL}" >> .env
+          echo "SUPABASE_KEY=${SUPABASE_KEY}" >> .env
+          echo "API_AUTH_KEY=${API_AUTH_KEY}" >> .env
           mv .env ${{ env.DOT_ENV_FILE_NAME }}
 
       - name: Copy env file to DEV Server
