@@ -231,6 +231,10 @@ module.exports = {
               label: "VedantKhairnar",
               to: "/docs/2024/org?id=VedantKhairnar",
             },
+            {
+              label: "AbhimanyuSamagra",
+              to: "/docs/2024/org?id=AbhimanyuSamagra",
+            },
           ]
         }
       ],

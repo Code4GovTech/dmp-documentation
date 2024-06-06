@@ -16,6 +16,17 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+
+
+@media screen and (max-width: 966px) {
+  .menu__link--active, .menu__link--active:hover {
+    color: #1c1e21 !important;
+  }
+  .menu__link--active {
+    background: #ffffff !important;
+  }
+}
+
 .dropdown__link--active, .dropdown__link--active:hover {
   color: #1c1e21;
 }

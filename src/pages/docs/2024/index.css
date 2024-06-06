@@ -32,6 +32,7 @@ gap: 28px;
 .h2-font{
 font-size: 32px;
 }
+
 @media screen and (max-width: 779px){
 .header-layout{
     flex-direction: column;
@@ -75,5 +76,9 @@ font-size: 32px;
 
 .right-side-table{
 padding-right: 0;
+}
+.fullwidth-table{
+    width: 100%;
+    display: table;
 }
 }
