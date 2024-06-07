@@ -17,6 +17,13 @@ WORKDIR /opt/docusaurus
 COPY . /opt/docusaurus/
 ## Install dependencies with `--immutable` to ensure reproducibility.
 RUN npm ci
+
+ARG API_BASE_URL
+ARG API_AUTH_KEY
+
+ENV API_BASE_URL=$API_BASE_URL
+ENV API_AUTH_KEY=$API_AUTH_KEY
+
 ## Build the static site.
 RUN npm run build
 
@@ -24,5 +31,9 @@ RUN npm run build
 FROM prod as serve
 ## Expose the port that Docusaurus will run on.
 EXPOSE 3000
+
+ENV NODE_ENV=production
+ENV API_BASE_URL=$API_BASE_URL
+ENV API_AUTH_KEY=$API_AUTH_KEY
 ## Run the production server.
 CMD ["npm", "run", "serve", "--", "--host", "0.0.0.0"]
