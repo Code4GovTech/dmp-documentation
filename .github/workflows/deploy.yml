@@ -82,7 +82,6 @@ jobs:
       - name: Read Secrets
         run: |
           echo "API_BASE_URL=${API_BASE_URL}" >> .env
-          echo "SUPABASE_KEY=${SUPABASE_KEY}" >> .env
           echo "API_AUTH_KEY=${API_AUTH_KEY}" >> .env
           mv .env ${{ env.DOT_ENV_FILE_NAME }}
 
