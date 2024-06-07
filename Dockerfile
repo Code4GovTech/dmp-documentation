@@ -17,6 +17,12 @@ WORKDIR /opt/docusaurus
 COPY . /opt/docusaurus/
 ## Install dependencies with `--immutable` to ensure reproducibility.
 RUN npm ci
+
+ARG API_BASE_URL
+ARG API_AUTH_KEY
+
+RUN echo "API_BASE_URL=${API_BASE_URL}\nAPI_AUTH_KEY=${API_AUTH_KEY}" > .env
+
 ## Build the static site.
 RUN npm run build
 
