@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import useParseMarkdown from "../hooks/useParseMarkdown";
 
-function SubProjectDescription({ selectedProject, issueNumber, currentIssue }) {
+function SubProjectDescription({ selectedProject, issueNumber, currentIssue,error,setError }) {
   const {weeklyGoals, weeklyLearnings,API_AUTH_KEY,API_BASE_URL} = useParseMarkdown();
   const [description, setDescription] = useState(null);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     setError(()=>null);
@@ -29,23 +28,7 @@ function SubProjectDescription({ selectedProject, issueNumber, currentIssue }) {
   }, [selectedProject]);
 
   return (<>
-    {error ? 
-      <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            flexDirection: "column",
-          }}
-        >
-          <p>{error.message}</p>
-          <button onClick={() => {window?.history.back()
-            window?.location?.reload()
-          }}>Back</button>
-        </div>
-      : <div
+    {!error && <div
       className="container padding-top--md padding-bottom--lg"
       style={{ minHeight: "60vh" }}
     >

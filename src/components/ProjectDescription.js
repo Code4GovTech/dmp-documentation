@@ -8,12 +8,13 @@ function ProjectDescription({
   setCurrentTab,
   setSelectedProject,
   setIssueNumber,
+  error,
+  setError
 }) {
   const history = useHistory();
   const {API_AUTH_KEY,API_BASE_URL} = useParseMarkdown();
   const [description, setDescription] = useState(null);
   const [mobile, setMobile] = useState(false);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     setError(()=>null);
@@ -55,23 +56,7 @@ function ProjectDescription({
   }, []);
   return (
     <>
-      {error ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            flexDirection: "column",
-          }}
-        >
-          <p>{error.message}</p>
-          <button onClick={() => {window?.history.back()
-            window?.location?.reload()
-          }}>Back</button>
-        </div>
-      ) : (
+      {!error && (
         <div
           className="container padding-top--md padding-bottom--lg"
           style={{ minHeight: "60vh" }}

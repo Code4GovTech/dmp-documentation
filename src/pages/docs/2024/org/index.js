@@ -57,25 +57,22 @@ function C4GT2024() {
     setCurrentIssue(() => product);
   }, [location]);
 
-  return (
-    <Layout>
-      {error ? (
+  return (<>
+  {error ? (
         <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100%",
-            flexDirection: "column",
-          }}
-        >
-          <p>{error.message}</p>
-          <button onClick={() => {window?.history.back()
-            window?.location?.reload()
-          }}>Back</button>
-        </div>
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          height: "100vh",
+          flexDirection: "column",
+        }}
+      ><h3>Oops, something went wrong</h3>
+        <p>{error.message}</p>
+      </div>
       ) : (
+    <Layout>
       <div className="main-wrapper docs-wrapper docs-doc-page">
         <div style={{ width: "100%", display: "flex" }}>
           <aside className="theme-doc-sidebar-container sidebar-container-2024">
@@ -177,6 +174,8 @@ function C4GT2024() {
                 setCurrentTab={setCurrentTab}
                 setIssueNumber={setIssueNumber}
                 setSelectedProject={setSelectedProject}
+                error={error}
+                setError={setError}
               />
             ) : (
               <></>
@@ -186,14 +185,17 @@ function C4GT2024() {
                 selectedProject={selectedProject}
                 issueNumber={issueNumber}
                 currentIssue={currentIssue}
+                error={error}
+                setError={setError}
               />
             ) : (
               <></>
             )}
           </main>
         </div>
-      </div>)}
-    </Layout>
+      </div>
+    </Layout>)}
+    </>
   );
 }
 export default C4GT2024;
