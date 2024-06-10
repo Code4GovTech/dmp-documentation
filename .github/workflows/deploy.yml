@@ -83,7 +83,7 @@ jobs:
         run: |
           echo "API_BASE_URL=${API_BASE_URL}" >> .env
           echo "API_AUTH_KEY=${API_AUTH_KEY}" >> .env
-          mv .env ${{ env.DOT_ENV_FILE_NAME }}
+          cp .env ${{ env.DOT_ENV_FILE_NAME }}
 
       - name: Copy env file to DEV Server
         uses: appleboy/scp-action@v0.1.7
