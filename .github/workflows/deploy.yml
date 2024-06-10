@@ -98,7 +98,7 @@ jobs:
 
       - name: Build ${{ env.APP_NAME }} Docker image
         run: |
-          docker build -t ${{ env.DOCKER_REGISTRY }}:${{ env.TAG_LATEST }} .
+          docker build --build-arg API_BASE_URL=$API_BASE_URL --build-arg API_AUTH_KEY=$API_AUTH_KEY -t ${{ env.DOCKER_REGISTRY }}:${{ env.TAG_LATEST }} .
 
       - name: Add tag to Docker image
         run: |
