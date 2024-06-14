@@ -13,13 +13,13 @@ function C4GT2024() {
   const {API_AUTH_KEY,API_BASE_URL} = useParseMarkdown();
   const [currentTab, setCurrentTab] = useState("description");
   const [currentIssue, setCurrentIssue] = useState(null);
-  const [currentIssueData, setCurrentIssueData] = useState(null);
   const [issueData, setIssueData] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
   const [issueNumber, setIssueNumber] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    setError(()=>null);
     const queryString = location.search;
     const urlParams = new URLSearchParams(queryString);
     const product = urlParams.get("id") ? urlParams.get("id") : "c4gt";
@@ -29,7 +29,6 @@ function C4GT2024() {
     const newUrl = `/docs/2024/org?id=${product}`;
     history.push(newUrl);
     setCurrentIssue(() => product);
-    setError(()=>null);
     fetch(`${API_BASE_URL}/issues`, {
       method: "GET",
       headers: {
@@ -37,13 +36,16 @@ function C4GT2024() {
       },
     })
       .then((response) => {
-        if (!response.ok) {
-            throw new Error(`Error! status: ${response.status}`);
-          }
         return response.json();
       })
       .then((data) => {
-        setIssueData(() => data);
+        if(data?.message){
+          throw new Error(`${data?.message}`);
+        }
+        else if(data?.error){
+          throw new Error(`${data?.error}`);
+        }
+        else setIssueData(() => data);
       })
       .catch((error) => {
         setError(()=>error);
@@ -68,8 +70,8 @@ function C4GT2024() {
           height: "100vh",
           flexDirection: "column",
         }}
-      ><h3>Oops, something went wrong</h3>
-        <p>{error.message}</p>
+      >
+        <h3>{error.message}</h3>
       </div>
       ) : (
     <Layout>
@@ -106,7 +108,6 @@ function C4GT2024() {
                             setSelectedProject(() => null);
                             setIssueNumber(() => null);
                             setCurrentTab(() => "description");
-                            setCurrentIssueData(() => data?.issues);
                           }}
                         >
                           <div
@@ -170,12 +171,10 @@ function C4GT2024() {
             {currentTab == "description" && currentIssue != null ? (
               <ProjectDescription
                 currentIssue={currentIssue}
-                currentIssueData={currentIssueData}
                 setCurrentTab={setCurrentTab}
                 setIssueNumber={setIssueNumber}
                 setSelectedProject={setSelectedProject}
-                error={error}
-                setError={setError}
+                issueData={issueData}
               />
             ) : (
               <></>
@@ -185,8 +184,6 @@ function C4GT2024() {
                 selectedProject={selectedProject}
                 issueNumber={issueNumber}
                 currentIssue={currentIssue}
-                error={error}
-                setError={setError}
               />
             ) : (
               <></>

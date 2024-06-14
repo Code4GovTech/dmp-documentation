@@ -19,13 +19,16 @@ function C4GT2024() {
       },
     })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Error! status: ${response.status}`);
-        }
         return response.json();
       })
       .then((data) => {
-        setIssueData(() => data);
+        if(data?.message){
+          throw new Error(`${data?.message}`);
+        }
+        else if(data?.error){
+          throw new Error(`${data?.error}`);
+        }
+        else setIssueData(() => data);
       })
       .catch((error) => {
         setError(() => error);
@@ -43,8 +46,8 @@ function C4GT2024() {
             height: "100vh",
             flexDirection: "column",
           }}
-        ><h3>Oops, something went wrong</h3>
-          <p>{error.message}</p>
+        >
+          <h3>{error.message}</h3>
         </div>
       ) : (
     <Layout>
