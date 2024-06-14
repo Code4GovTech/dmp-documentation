@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import useParseMarkdown from "../hooks/useParseMarkdown";
 
-function SubProjectDescription({ selectedProject, issueNumber, currentIssue,error,setError }) {
+function SubProjectDescription({ selectedProject, issueNumber, currentIssue }) {
   const {weeklyGoals, weeklyLearnings,API_AUTH_KEY,API_BASE_URL} = useParseMarkdown();
   const [description, setDescription] = useState(null);
+  const [error,setError] =useState(null)
 
   useEffect(() => {
     setError(()=>null);
@@ -14,13 +15,16 @@ function SubProjectDescription({ selectedProject, issueNumber, currentIssue,erro
       },
     })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Error! status: ${response.status}`);
-        }
         return response.json();
       })
       .then((data) => {
-        setDescription(() => data);
+        if(data?.message){
+          throw new Error(`${data?.message}`);
+        }
+        else if(data?.error){
+          throw new Error(`${data?.error}`);
+        }
+        else setDescription(() => data);
       })
       .catch((error) => {
         setError(()=>error)
@@ -28,7 +32,20 @@ function SubProjectDescription({ selectedProject, issueNumber, currentIssue,erro
   }, [selectedProject]);
 
   return (<>
-    {!error && <div
+    {error ? (
+        <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          height: "100vh",
+          flexDirection: "column",
+        }}
+      >
+        <h3>{error.message}</h3>
+      </div>
+      ) :  <div
       className="container padding-top--md padding-bottom--lg"
       style={{ minHeight: "60vh" }}
     >

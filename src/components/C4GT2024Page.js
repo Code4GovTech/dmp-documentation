@@ -24,7 +24,7 @@ function C4GT2024Page() {
                   <li className="breadcrumbs__item breadcrumbs__item--active">
                     <a
                       className="breadcrumbs__link breadcrumbs-items"
-                      href="/docs/2024/"
+                      // href="/docs/2024/"
                       style={{ cursor: "pointer" }}
                     >
                       C4GT'24

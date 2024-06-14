@@ -4,20 +4,27 @@ import useParseMarkdown from "../hooks/useParseMarkdown";
 
 function ProjectDescription({
   currentIssue,
-  currentIssueData,
   setCurrentTab,
   setSelectedProject,
   setIssueNumber,
-  error,
-  setError
+  issueData
 }) {
   const history = useHistory();
   const {API_AUTH_KEY,API_BASE_URL} = useParseMarkdown();
   const [description, setDescription] = useState(null);
   const [mobile, setMobile] = useState(false);
+  const [error,setError] =useState(null)
+  const [currentIssueData,setCurrentIssueData] = useState(null)
 
   useEffect(() => {
     setError(()=>null);
+    setCurrentIssueData(()=>{
+      let data = issueData?.filter((d,i)=>{
+        if(d.org_name===currentIssue) return d.issues
+        else return null
+      })
+      return data
+    })
     fetch(`${API_BASE_URL}/issues/${currentIssue}`, {
       method: "GET",
       headers: {
@@ -25,13 +32,16 @@ function ProjectDescription({
       },
     })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Error! status: ${response.status}`);
-        }
         return response.json();
       })
       .then((data) => {
-        setDescription(() => data);
+        if(data?.message){
+          throw new Error(`${data?.message}`);
+        }
+        else if(data?.error){
+          throw new Error(`${data?.error}`);
+        }
+        else setDescription(() => data);
       })
       .catch((error) => {
         setError(error);
@@ -56,7 +66,20 @@ function ProjectDescription({
   }, []);
   return (
     <>
-      {!error && (
+      {error ? (
+        <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          height: "100vh",
+          flexDirection: "column",
+        }}
+      >
+        <h3>{error.message}</h3>
+      </div>
+      ) : description ? (
         <div
           className="container padding-top--md padding-bottom--lg"
           style={{ minHeight: "60vh" }}
@@ -103,10 +126,11 @@ function ProjectDescription({
                         </h3>
                         {currentIssueData?.length != 0 && (
                           <ul>
-                            {currentIssueData?.map((d, i) => {
+                            {currentIssueData?.[0]?.issues?.map((d, i) => {
+                              // console.log(currentIssueData)
                               return (
                                 <li key={i}>
-                                  <a
+                                  <a style={{cursor:"pointer"}}
                                     onClick={() => {
                                       const newUrl = `/docs/2024/org?id=${currentIssue}&issue=${d.name}`;
                                       history.push(newUrl);
@@ -130,7 +154,7 @@ function ProjectDescription({
             </div>
           </div>
         </div>
-      )}
+      ):<></>}
     </>
   );
 }
