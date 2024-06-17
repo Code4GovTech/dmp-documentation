@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from "react";
 import useParseMarkdown from "../hooks/useParseMarkdown";
+import Markdown from "markdown-to-jsx";
+import uncheckedBox from "/img/checkbox.png";
+import checkedBox from "/img/tickedCheckbox.png";
 
-function SubProjectDescription({ selectedProject, issueNumber, currentIssue }) {
-  const {weeklyGoals, weeklyLearnings,API_AUTH_KEY,API_BASE_URL} = useParseMarkdown();
+function SubProjectDescription({ currentOrg, currentIssue }) {
+  const { API_AUTH_KEY, API_BASE_URL } = useParseMarkdown();
   const [description, setDescription] = useState(null);
-  const [error,setError] =useState(null)
+  const [isLearningsDropdown, setLearningsDropdown] = useState(0);
+  const [isGoalsDropdown, setGoalssDropdown] = useState(0);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    setError(()=>null);
-    fetch(`${API_BASE_URL}/issues/${currentIssue}/${issueNumber}`, {
+    setError(() => null);
+    fetch(`${API_BASE_URL}/v2/issues/${currentOrg}/${currentIssue}`, {
       method: "GET",
       headers: {
         "X-Secret-Key": API_AUTH_KEY,
@@ -18,39 +23,39 @@ function SubProjectDescription({ selectedProject, issueNumber, currentIssue }) {
         return response.json();
       })
       .then((data) => {
-        if(data?.message){
+        if (data?.message) {
           throw new Error(`${data?.message}`);
-        }
-        else if(data?.error){
+        } else if (data?.error) {
           throw new Error(`${data?.error}`);
-        }
-        else setDescription(() => data);
+        } else setDescription(() => data);
       })
       .catch((error) => {
-        setError(()=>error)
+        setError(() => error);
       });
-  }, [selectedProject]);
+  }, [currentIssue]);
 
-  return (<>
-    {error ? (
+  return (
+    <>
+      {error ? (
         <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-          height: "100vh",
-          flexDirection: "column",
-        }}
-      >
-        <h3>{error.message}</h3>
-      </div>
-      ) :  <div
-      className="container padding-top--md padding-bottom--lg"
-      style={{ minHeight: "60vh" }}
-    >
-      {description && (
-        <article>
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            height: "100vh",
+            flexDirection: "column",
+          }}
+        >
+          <h3>{error.message}</h3>
+        </div>
+      ) : (
+        <div
+          className="container padding-top--md padding-bottom--lg"
+          style={{ minHeight: "60vh" }}
+        >
+          {description && (
+            <article>
               <nav
                 className="theme-doc-breadcrumbs"
                 style={{ marginBottom: ".4rem" }}
@@ -63,8 +68,11 @@ function SubProjectDescription({ selectedProject, issueNumber, currentIssue }) {
                     </a>
                   </li>
                   <li className="breadcrumbs__item">
-                    <a className="breadcrumbs__link breadcrumbs-items" href={`/docs/2024/org?id=${currentIssue}`}>
-                      {currentIssue}
+                    <a
+                      className="breadcrumbs__link breadcrumbs-items"
+                      href={`/docs/2024/org?id=${currentOrg}`}
+                    >
+                      {currentOrg}
                     </a>
                   </li>
                   <li className="breadcrumbs__item breadcrumbs__item--active">
@@ -72,169 +80,317 @@ function SubProjectDescription({ selectedProject, issueNumber, currentIssue }) {
                       className="breadcrumbs__link breadcrumbs-items"
                       style={{ cursor: "pointer" }}
                     >
-                      {selectedProject}
+                      {description?.name}
                     </a>
                   </li>
                 </ul>
               </nav>
-          <div className="theme-doc-markdown markdown">
-            <div className="header-layout">
-              <div>
-                <header
-                  style={{ display: "flex", gap: "16px", alignItems: "center" }}
-                >
+              <div className="theme-doc-markdown markdown">
+                <div className="header-layout">
                   <div>
-                    <h1>{selectedProject}</h1>
-                  </div>
-                  <div>
-                    <a href={description?.issue_url} target="_blank">
-                      <img src={"/img/link_icon.svg"} width={32} height={32} />
-                    </a>
-                  </div>
-                </header>
-                {description?.description && (
-                  <>
-                    <h2 style={{ fontSize: "32px" }}>Overview</h2>
-                    <p>{description?.description}</p>
-                  </>
-                )}
-              </div>
-              <div
-                className="table-container thin-scrollbar theme-doc-toc-desktop right-side-table"
-                style={{ minWidth: "300px" }}
-              >
-                {description?.overall_progress != null && (
-                  <>
-                    <div
-                      className="progress-bar-container"
-                      style={{ maxWidth: "200px" }}
+                    <header
+                      style={{
+                        display: "flex",
+                        gap: "16px",
+                        alignItems: "center",
+                      }}
                     >
-                      <div
-                        className="progress-bar"
-                        style={{ width: `${description?.overall_progress}%` }}
-                      >
-                        {description?.overall_progress > 0
-                          ? description?.overall_progress + "%"
-                          : ""}
+                      <div>
+                        <h1>{description?.name}</h1>
                       </div>
-                    </div>
-                  </>
-                )}
-                <table style={{ width: "100%" }}>
-                  {description?.contributor_name && (
-                    <tr>
-                      <th>Contributor Name</th>
-                      <td>
-                        <a
-                          href={`https://github.com/${description?.contributor_name}`}
-                          target="_blank"
-                        >
-                          {description?.contributor_name}
-                        </a>
-                      </td>
-                    </tr>
-                  )}
-                  {description?.mentor_name?.length != 0 && (
-                    <>
-                      <tr>
-                        <th rowspan={description?.mentor_name?.length}>
-                          Mentor Name
-                        </th>
-                        <td>
-                          <a
-                            href={`https://github.com/${description?.mentor_name[0]}`}
-                            target="_blank"
-                          >
-                            {description?.mentor_name[0]}
+                      {description?.issue_url && (
+                        <div>
+                          <a href={description?.issue_url} target="_blank">
+                            <img
+                              src={"/img/link_icon.svg"}
+                              width={32}
+                              height={32}
+                            />
                           </a>
-                        </td>
-                      </tr>
-                      {description?.mentor_name?.length > 1 && (
+                        </div>
+                      )}
+                    </header>
+                    {description?.description && (
+                      <>
+                        <h2 style={{ fontSize: "32px" }}>Overview</h2>
+                        <p>{description?.description}</p>
+                      </>
+                    )}
+                  </div>
+                  <div
+                    className="table-container thin-scrollbar theme-doc-toc-desktop right-side-table"
+                    style={{ minWidth: "300px" }}
+                  >
+                    {description?.overall_progress != null && (
+                      <>
+                        <div
+                          className="progress-bar-container"
+                          style={{ maxWidth: "200px" }}
+                        >
+                          <div
+                            className="progress-bar"
+                            style={{
+                              width: `${description?.overall_progress}%`,
+                              fontSize: "15px",
+                            }}
+                          />
+                        </div>
+                        <b>{description?.overall_progress + "%"}</b>
+                      </>
+                    )}
+                    <table style={{ width: "100%" }}>
+                      {description?.contributor.length != 0 && (
+                        <tr>
+                          <th>Contributor Name</th>
+                          <td>
+                            <a
+                              href={`${description?.contributor[0]?.link}`}
+                              target="_blank"
+                            >
+                              {description?.contributor[0]?.name}
+                            </a>
+                          </td>
+                        </tr>
+                      )}
+                      {description?.mentor?.length != 0 && (
                         <>
-                          {description?.mentor_name?.map((d, i) => {
-                            if (i != 0) {
-                              return (
-                                <tr>
-                                  <td>
-                                    <a
-                                      href={`https://github.com/${d}`}
-                                      target="_blank"
-                                    >
-                                      {d}
-                                    </a>
-                                  </td>
-                                </tr>
-                              );
-                            } else return <></>;
-                          })}
+                          <tr>
+                            <th rowspan={description?.mentor?.length}>
+                              Mentor Name
+                            </th>
+                            <td>
+                              <a
+                                href={`${description?.mentor[0]?.link}`}
+                                target="_blank"
+                              >
+                                {description?.mentor[0]?.name}
+                              </a>
+                            </td>
+                          </tr>
+                          {description?.mentor?.length > 1 && (
+                            <>
+                              {description?.mentor?.map((d, i) => {
+                                if (i != 0) {
+                                  return (
+                                    <tr>
+                                      <td>
+                                        <a href={`${d?.link}`} target="_blank">
+                                          {d?.name}
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  );
+                                } else return <></>;
+                              })}
+                            </>
+                          )}
                         </>
                       )}
-                    </>
-                  )}
-                  {description?.org_name && (
-                    <tr>
-                      <th>Org Name</th>
-                      <td>
-                        <a href={description?.org_link} target="_blank">
-                          {description?.org_name}
-                        </a>
-                      </td>
-                    </tr>
-                  )}
-                </table>
+                      {description?.org && (
+                        <tr>
+                          <th>Org Name</th>
+                          <td>
+                            <a href={description?.org?.link} target="_blank">
+                              {description?.org?.name}
+                            </a>
+                          </td>
+                        </tr>
+                      )}
+                    </table>
+                  </div>
+                </div>
+                {description?.weekly_goals?.length > 0 && (
+                  <div
+                    className="markdown-body"
+                    style={{ marginBottom: "16px" }}
+                  >
+                    <h2 style={{ fontSize: "32px" }}>Weekly Goals</h2>
+                    {description?.weekly_goals?.map((d, i) => {
+                      return (
+                        <table className="fullwidth-table">
+                          <tr>
+                            <th>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  justifyContent: "space-between",
+                                  alignItems: "center",
+                                  gap: "48px",
+                                  cursor: "pointer",
+                                }}
+                                onClick={() => {
+                                  if (isGoalsDropdown == i)
+                                    setGoalssDropdown(null);
+                                  else setGoalssDropdown(i);
+                                }}
+                              >
+                                <div>Week {d.week}</div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    gap: "16px",
+                                    alignItems: "center",
+                                  }}
+                                >
+                                  <div>{d?.progress}%</div>
+                                  {d?.progress == 100 && (
+                                    <img
+                                      src={"/img/GreenCheckbox.png"}
+                                      alt="checkbox"
+                                      width={20}
+                                      height={20}
+                                    />
+                                  )}
+                                  <img
+                                    src={"/img/right-arrow-icon.svg"}
+                                    alt="arrow-icon"
+                                    style={{
+                                      transform:
+                                        isGoalsDropdown == i
+                                          ? "rotate(90deg)"
+                                          : "none",
+                                    }}
+                                    width={20}
+                                    height={20}
+                                  />
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                          {d?.tasks?.length > 0 && isGoalsDropdown == i && (
+                            <>
+                              {d?.tasks?.map((t, index) => {
+                                return (
+                                  <tr
+                                    key={index}
+                                    style={{ backgroundColor: "none" }}
+                                  >
+                                    <td align="left">
+                                      <div
+                                        style={{
+                                          display: "flex",
+                                          justifyContent: "space-between",
+                                          alignItems: "center",
+                                        }}
+                                      >
+                                        <div>{`${index + 1}. ${t?.content}`}</div>
+                                        <div>
+                                          <img
+                                            src={
+                                              t.checked
+                                                ? checkedBox
+                                                : uncheckedBox
+                                            }
+                                            alt="checkbox"
+                                            width={20}
+                                            height={20}
+                                          />
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                );
+                              })}
+                            </>
+                          )}
+                        </table>
+                      );
+                    })}
+                  </div>
+                )}
+                {description?.weekly_learnings?.length > 0 && (
+                  <div
+                    className="markdown-body"
+                    style={{ marginBottom: "16px" }}
+                  >
+                    <h2 style={{ fontSize: "32px" }}>Weekly Learnings</h2>
+                    {description?.weekly_learnings?.map((d, i) => {
+                      return (
+                        <table className="fullwidth-table">
+                          <tr>
+                            <th>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  justifyContent: "space-between",
+                                  alignItems: "center",
+                                  cursor: "pointer",
+                                }}
+                                onClick={() => {
+                                  if (isLearningsDropdown == i)
+                                    setLearningsDropdown(null);
+                                  else setLearningsDropdown(i);
+                                }}
+                              >
+                                <div>Week {d.week}</div>
+                                <div>
+                                  <img
+                                    src={"/img/right-arrow-icon.svg"}
+                                    alt="arrow-icon"
+                                    style={{
+                                      transform:
+                                        isLearningsDropdown == i
+                                          ? "rotate(90deg)"
+                                          : "none",
+                                    }}
+                                    width={20}
+                                    height={20}
+                                  />
+                                </div>
+                              </div>
+                            </th>
+                          </tr>
+                          {d.content && isLearningsDropdown == i && (
+                            <tr style={{ backgroundColor: "none" }}>
+                              <td align="left">
+                                <Markdown>{d.content}</Markdown>
+                              </td>
+                            </tr>
+                          )}
+                        </table>
+                      );
+                    })}
+                  </div>
+                )}
+                {description?.pr_details.length > 0 && (
+                  <>
+                    <h2 style={{ fontSize: "32px" }}>
+                      Overall Project PR Table
+                    </h2>
+                    <table className="fullwidth-table">
+                      <thead>
+                        <tr>
+                          <th align="left">Week</th>
+                          <th align="left">PR Name</th>
+                          <th align="left">Link</th>
+                          <th align="left">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {description?.pr_details?.map((tdata, i) => {
+                          return (
+                            <tr key={i}>
+                              <td align="left">{tdata.week}</td>
+                              <td align="left">{tdata.name}</td>
+                              <td align="left">
+                                <a href={tdata.link} target="_blank">
+                                  {tdata.link}
+                                </a>
+                              </td>
+                              <td align="left">{tdata.status}</td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </>
+                )}
               </div>
-            </div>
-            <div className="markdown-body" style={{ marginBottom: "16px" }}>
-              {description?.weekly_goals_html && (
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: weeklyGoals(description?.weekly_goals_html),
-                  }}
-                />
-              )}
-            </div>
-            <div className="markdown-body" style={{ marginBottom: "16px" }}>
-              {description?.weekly_learnings_html && (
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: weeklyLearnings(
-                      description?.weekly_learnings_html,
-                    ),
-                  }}
-                />
-              )}
-            </div>
-            <h2 style={{ fontSize: "32px" }}>Overall Project PR Table</h2>
-            <table className="fullwidth-table">
-              <thead>
-                <tr>
-                  <th align="left">Week</th>
-                  <th align="left">PR Name</th>
-                  <th align="left">Link</th>
-                  <th align="left">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {description?.pr_details?.map((tdata, i) => {
-                  return (
-                    <tr key={i}>
-                      <td align="left">{tdata.week}</td>
-                      <td align="left">{tdata.name}</td>
-                      <td align="left">
-                        <a href={tdata.link} target="_blank">
-                          {tdata.link}
-                        </a>
-                      </td>
-                      <td align="left">{tdata.status}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </article>
+            </article>
+          )}
+        </div>
       )}
-    </div>}</>
+    </>
   );
 }
 

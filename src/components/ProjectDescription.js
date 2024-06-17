@@ -3,29 +3,18 @@ import { useHistory } from "react-router-dom";
 import useParseMarkdown from "../hooks/useParseMarkdown";
 
 function ProjectDescription({
-  currentIssue,
-  setCurrentTab,
-  setSelectedProject,
-  setIssueNumber,
-  issueData
+  currentOrg,
+  currentOrgData
 }) {
   const history = useHistory();
-  const {API_AUTH_KEY,API_BASE_URL} = useParseMarkdown();
+  const { API_AUTH_KEY, API_BASE_URL } = useParseMarkdown();
   const [description, setDescription] = useState(null);
   const [mobile, setMobile] = useState(false);
-  const [error,setError] =useState(null)
-  const [currentIssueData,setCurrentIssueData] = useState(null)
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    setError(()=>null);
-    setCurrentIssueData(()=>{
-      let data = issueData?.filter((d,i)=>{
-        if(d.org_name===currentIssue) return d.issues
-        else return null
-      })
-      return data
-    })
-    fetch(`${API_BASE_URL}/issues/${currentIssue}`, {
+    setError(() => null);
+    fetch(`${API_BASE_URL}/issues/${currentOrg}`, {
       method: "GET",
       headers: {
         "X-Secret-Key": API_AUTH_KEY,
@@ -35,18 +24,16 @@ function ProjectDescription({
         return response.json();
       })
       .then((data) => {
-        if(data?.message){
+        if (data?.message) {
           throw new Error(`${data?.message}`);
-        }
-        else if(data?.error){
+        } else if (data?.error) {
           throw new Error(`${data?.error}`);
-        }
-        else setDescription(() => data);
+        } else setDescription(() => data?.[0]);
       })
       .catch((error) => {
         setError(error);
       });
-  }, [currentIssue]);
+  }, [currentOrg]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -64,21 +51,22 @@ function ProjectDescription({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
       {error ? (
         <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-          height: "100vh",
-          flexDirection: "column",
-        }}
-      >
-        <h3>{error.message}</h3>
-      </div>
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            height: "100vh",
+            flexDirection: "column",
+          }}
+        >
+          <h3>{error.message}</h3>
+        </div>
       ) : description ? (
         <div
           className="container padding-top--md padding-bottom--lg"
@@ -105,7 +93,6 @@ function ProjectDescription({
                       <li className="breadcrumbs__item breadcrumbs__item--active">
                         <a
                           className="breadcrumbs__link breadcrumbs-items"
-                          href={`/docs/2024/org?id=${description?.name}`}
                           style={{ cursor: "pointer" }}
                         >
                           {description?.name}
@@ -124,19 +111,15 @@ function ProjectDescription({
                           Following are the list of Issues associated with the
                           organization
                         </h3>
-                        {currentIssueData?.length != 0 && (
+                        {currentOrgData?.length != 0 && (
                           <ul>
-                            {currentIssueData?.[0]?.issues?.map((d, i) => {
-                              // console.log(currentIssueData)
+                            {currentOrgData?.[0]?.issues?.map((d, i) => {
                               return (
                                 <li key={i}>
                                   <a style={{cursor:"pointer"}}
                                     onClick={() => {
-                                      const newUrl = `/docs/2024/org?id=${currentIssue}&issue=${d.name}`;
+                                      const newUrl = `/docs/2024/org?id=${currentOrg}&issue=${d.id}`;
                                       history.push(newUrl);
-                                      setCurrentTab(() => "subDescription");
-                                      setSelectedProject(() => d.name);
-                                      setIssueNumber(() => d.issue_number);
                                     }}
                                   >
                                     {d.name}
@@ -154,7 +137,9 @@ function ProjectDescription({
             </div>
           </div>
         </div>
-      ):<></>}
+      ) : (
+        <></>
+      )}
     </>
   );
 }

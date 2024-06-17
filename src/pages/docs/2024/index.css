@@ -22,6 +22,7 @@ align-items: center;
 flex-direction: column;
 justify-content: center;
 padding-right: 0;
+gap: 8px;
 }
 .header-layout{
 width: 100%;
@@ -32,6 +33,15 @@ gap: 28px;
 .h2-font{
 font-size: 32px;
 }
+
+table tr:nth-child(2n){
+    background-color: #ffffff !important;
+}
+
+.fullwidth-table th{
+    background-color: #f5f6f7 !important;
+}
+
 
 @media screen and (max-width: 779px){
 .header-layout{

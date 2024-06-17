@@ -36,17 +36,15 @@
 
 .progress-bar-container {
   width: 100%;
-  background-color: #e0e0df;
-  border-radius: 25px;
+  background-color: #f1f1f1;
+  border-radius: 2px;
   overflow: hidden;
-  margin: 20px 0;
 }
 
 .progress-bar {
   height: 25px;
-  background-color: #7DF774;
+  background-color: #40C057;
   text-align: center;
   line-height: 25px;
   color: #1c1e21;
-  border-radius: 25px 0 0 25px;
 }
