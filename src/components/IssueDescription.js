@@ -3,8 +3,9 @@ import useParseMarkdown from "../hooks/useParseMarkdown";
 import Markdown from "markdown-to-jsx";
 import uncheckedBox from "/img/checkbox.png";
 import checkedBox from "/img/tickedCheckbox.png";
+import ErrorComponent from "./ErrorComponent";
 
-function SubProjectDescription({ currentOrg, currentIssue }) {
+function IssueDescription({ currentOrg, currentIssue }) {
   const { API_AUTH_KEY, API_BASE_URL } = useParseMarkdown();
   const [description, setDescription] = useState(null);
   const [isLearningsDropdown, setLearningsDropdown] = useState(0);
@@ -37,28 +38,15 @@ function SubProjectDescription({ currentOrg, currentIssue }) {
   return (
     <>
       {error ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100vh",
-            flexDirection: "column",
-          }}
-        >
-          <h3>{error.message}</h3>
-        </div>
+        <ErrorComponent error={error} />
       ) : (
         <div
-          className="container padding-top--md padding-bottom--lg"
-          style={{ minHeight: "60vh" }}
+          className="container padding-top--md padding-bottom--lg container-height"
         >
           {description && (
             <article>
               <nav
-                className="theme-doc-breadcrumbs"
-                style={{ marginBottom: ".4rem" }}
+                className="theme-doc-breadcrumbs breadcrumbs-margin"
                 aria-label="breadcrumbs"
               >
                 <ul className="breadcrumbs">
@@ -77,8 +65,7 @@ function SubProjectDescription({ currentOrg, currentIssue }) {
                   </li>
                   <li className="breadcrumbs__item breadcrumbs__item--active">
                     <a
-                      className="breadcrumbs__link breadcrumbs-items"
-                      style={{ cursor: "pointer" }}
+                      className="breadcrumbs__link breadcrumbs-items cursor-pointer"
                     >
                       {description?.name}
                     </a>
@@ -112,7 +99,7 @@ function SubProjectDescription({ currentOrg, currentIssue }) {
                     </header>
                     {description?.description && (
                       <>
-                        <h2 style={{ fontSize: "32px" }}>Overview</h2>
+                        <h2>Overview</h2>
                         <p>{description?.description}</p>
                       </>
                     )}
@@ -204,7 +191,7 @@ function SubProjectDescription({ currentOrg, currentIssue }) {
                     className="markdown-body"
                     style={{ marginBottom: "16px" }}
                   >
-                    <h2 style={{ fontSize: "32px" }}>Weekly Goals</h2>
+                    <h2>Weekly Goals</h2>
                     {description?.weekly_goals?.map((d, i) => {
                       return (
                         <table className="fullwidth-table">
@@ -303,7 +290,7 @@ function SubProjectDescription({ currentOrg, currentIssue }) {
                     className="markdown-body"
                     style={{ marginBottom: "16px" }}
                   >
-                    <h2 style={{ fontSize: "32px" }}>Weekly Learnings</h2>
+                    <h2>Weekly Learnings</h2>
                     {description?.weekly_learnings?.map((d, i) => {
                       return (
                         <table className="fullwidth-table">
@@ -394,4 +381,4 @@ function SubProjectDescription({ currentOrg, currentIssue }) {
   );
 }
 
-export default SubProjectDescription;
+export default IssueDescription;

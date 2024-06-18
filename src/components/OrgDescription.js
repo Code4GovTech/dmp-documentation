@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import useParseMarkdown from "../hooks/useParseMarkdown";
+import ErrorComponent from "./ErrorComponent";
 
-function ProjectDescription({
-  currentOrg,
-  currentOrgData
-}) {
+function OrgDescription({ currentOrg, currentOrgData }) {
   const history = useHistory();
   const { API_AUTH_KEY, API_BASE_URL } = useParseMarkdown();
   const [description, setDescription] = useState(null);
@@ -55,30 +53,17 @@ function ProjectDescription({
   return (
     <>
       {error ? (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            height: "100vh",
-            flexDirection: "column",
-          }}
-        >
-          <h3>{error.message}</h3>
-        </div>
+        <ErrorComponent error={error} />
       ) : description ? (
         <div
-          className="container padding-top--md padding-bottom--lg"
-          style={{ minHeight: "60vh" }}
+          className="container padding-top--md padding-bottom--lg container-height"
         >
           <div className="row">
             <div className="col width">
               <div>
                 <article>
                   <nav
-                    className="theme-doc-breadcrumbs"
-                    style={{ marginBottom: ".4rem" }}
+                    className="theme-doc-breadcrumbs breadcrumbs-margin"
                     aria-label="breadcrumbs"
                   >
                     <ul className="breadcrumbs">
@@ -92,8 +77,7 @@ function ProjectDescription({
                       </li>
                       <li className="breadcrumbs__item breadcrumbs__item--active">
                         <a
-                          className="breadcrumbs__link breadcrumbs-items"
-                          style={{ cursor: "pointer" }}
+                          className="breadcrumbs__link breadcrumbs-items cursor-pointer"
                         >
                           {description?.name}
                         </a>
@@ -116,7 +100,8 @@ function ProjectDescription({
                             {currentOrgData?.[0]?.issues?.map((d, i) => {
                               return (
                                 <li key={i}>
-                                  <a style={{cursor:"pointer"}}
+                                  <a
+                                    className="cursor-pointer"
                                     onClick={() => {
                                       const newUrl = `/docs/2024/org?id=${currentOrg}&issue=${d.id}`;
                                       history.push(newUrl);
@@ -144,4 +129,4 @@ function ProjectDescription({
   );
 }
 
-export default ProjectDescription;
+export default OrgDescription;

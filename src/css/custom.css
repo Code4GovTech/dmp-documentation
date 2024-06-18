@@ -48,3 +48,7 @@
   line-height: 25px;
   color: #1c1e21;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}

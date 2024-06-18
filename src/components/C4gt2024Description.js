@@ -1,18 +1,16 @@
 import React from "react";
 
-function C4GT2024Page() {
+function C4GT2024Description() {
   return (
     <div
-      className="container padding-top--md padding-bottom--lg"
-      style={{ minHeight: "60vh" }}
+      className="container padding-top--md padding-bottom--lg container-height"
     >
       <div className="row">
         <div className="col width">
           <div>
             <article>
               <nav
-                className="theme-doc-breadcrumbs"
-                style={{ marginBottom: ".4rem" }}
+                className="theme-doc-breadcrumbs breadcrumbs-margin"
                 aria-label="breadcrumbs"
               >
                 <ul className="breadcrumbs">
@@ -23,8 +21,7 @@ function C4GT2024Page() {
                   </li>
                   <li className="breadcrumbs__item breadcrumbs__item--active">
                     <a
-                      className="breadcrumbs__link breadcrumbs-items"
-                      style={{ cursor: "pointer" }}
+                      className="breadcrumbs__link breadcrumbs-items cursor-pointer"
                     >
                       C4GT'24
                     </a>
@@ -65,4 +62,4 @@ function C4GT2024Page() {
   );
 }
 
-export default C4GT2024Page;
+export default C4GT2024Description;
