@@ -15,3 +15,40 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+
+
+@media screen and (max-width: 966px) {
+  .menu__link--active, .menu__link--active:hover {
+    color: #1c1e21 !important;
+  }
+  .menu__link--active {
+    background: #ffffff !important;
+  }
+}
+
+.dropdown__link--active, .dropdown__link--active:hover {
+  color: #1c1e21;
+}
+.dropdown__link--active {
+  background-color: #ffffff;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 25px;
+  background-color: #40C057;
+  text-align: center;
+  line-height: 25px;
+  color: #1c1e21;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+name: "docusaurus"
+services:
+  serve:
+    build:
+      context: .
+      args:
+        API_BASE_URL: ${API_BASE_URL}
+        API_AUTH_KEY: ${API_AUTH_KEY}
+      target: serve
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - API_BASE_URL=${API_BASE_URL}
+      - API_AUTH_KEY=${API_AUTH_KEY}
