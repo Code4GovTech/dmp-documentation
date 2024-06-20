@@ -330,7 +330,7 @@ function IssueDescription({ currentOrg, currentIssue }) {
                           {d.content && isLearningsDropdown == i && (
                             <tr style={{ backgroundColor: "none" }}>
                               <td align="left">
-                                <Markdown>{d.content}</Markdown>
+                                {d.content.match(/<ul>[\s\S]*?<\/ul>/) ? <Markdown>{d.content.match(/<ul>[\s\S]*?<\/ul>/)[0]}</Markdown> : <Markdown>{d.content}</Markdown>}
                               </td>
                             </tr>
                           )}
