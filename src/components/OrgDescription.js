@@ -103,7 +103,7 @@ function OrgDescription({ currentOrg, currentOrgData }) {
                                   <a
                                     className="cursor-pointer"
                                     onClick={() => {
-                                      const newUrl = `/docs/2024/org?id=${currentOrg}&issue=${d.id}`;
+                                      const newUrl = `/docs/2024?id=${currentOrg}&issue=${d.id}`;
                                       history.push(newUrl);
                                     }}
                                   >
