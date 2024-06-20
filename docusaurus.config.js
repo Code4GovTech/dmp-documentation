@@ -229,11 +229,11 @@ module.exports = {
           items: [
             {
               label: "VedantKhairnar",
-              to: "/docs/2024/org?id=VedantKhairnar",
+              to: "/docs/2024?id=VedantKhairnar",
             },
             {
               label: "AbhimanyuSamagra",
-              to: "/docs/2024/org?id=AbhimanyuSamagra",
+              to: "/docs/2024?id=AbhimanyuSamagra",
             },
           ]
         }
