@@ -8,6 +8,7 @@ function Sidebar({
   setCurrentOrg,
   currentIssue,
   setCurrentIssue,
+  setCurrentTab
 }) {
   const history = useHistory();
   return (
@@ -18,7 +19,9 @@ function Sidebar({
             <div
               className={`menu__link cursor-pointer ${currentTab == "c4gt" ? "menu__link--active" : ""}`}
               onClick={() => {
-                window.location.href = `/docs/2024/`;
+                const newUrl = `/docs/2024/`;
+                      history.push(newUrl);
+                      setCurrentTab("c4gt")
               }}
             >
               C4GT'24
@@ -36,7 +39,7 @@ function Sidebar({
                   <div
                     className={`menu__list-item-collapsible cursor-pointer ${currentOrg == data?.org_name && currentIssue == null ? "menu__list-item-collapsible--active" : ""}`}
                     onClick={() => {
-                      const newUrl = `/docs/2024/org?id=${data?.org_name}`;
+                      const newUrl = `/docs/2024?id=${data?.org_name}`;
                       history.push(newUrl);
                       setCurrentOrg(() => data?.org_name);
                       setCurrentIssue(() => null);
@@ -74,7 +77,7 @@ function Sidebar({
                               <div
                                 className={`menu__link cursor-pointer ${currentIssue == d.id ? "menu__link--active" : ""}`}
                                 onClick={() => {
-                                  const newUrl = `/docs/2024/org?id=${currentOrg}&issue=${d.id}`;
+                                  const newUrl = `/docs/2024?id=${currentOrg}&issue=${d.id}`;
                                   history.push(newUrl);
                                   setCurrentIssue(() => d.id);
                                 }}

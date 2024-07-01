@@ -58,7 +58,7 @@ function IssueDescription({ currentOrg, currentIssue }) {
                   <li className="breadcrumbs__item">
                     <a
                       className="breadcrumbs__link breadcrumbs-items"
-                      href={`/docs/2024/org?id=${currentOrg}`}
+                      href={`/docs/2024?id=${currentOrg}`}
                     >
                       {currentOrg}
                     </a>
