@@ -229,143 +229,143 @@ module.exports = {
           items: [
             {
               label: "A2I Bangladesh",
-              to: "/docs/2024/org?id=A2I%20Bangladesh",
+              to: "/docs/2024?id=A2I%20Bangladesh",
             },
             {
               label: "ABDM Enablers",
-              to: "/docs/2024/org?id=ABDM%20Enablers",
+              to: "/docs/2024?id=ABDM%20Enablers",
             },
             {
               label: "Arghyam",
-              to: "/docs/2024/org?id=Arghyam",
+              to: "/docs/2024?id=Arghyam",
             },
             {
               label: "Avanti Fellows",
-              to: "/docs/2024/org?id=Avanti%20Fellows",
+              to: "/docs/2024?id=Avanti%20Fellows",
             },
             {
               label: "Beckn Open Collective",
-              to: "/docs/2024/org?id=Beckn%20Open%20Collective",
+              to: "/docs/2024?id=Beckn%20Open%20Collective",
             },
             {
               label: "Belongg",
-              to: "/docs/2024/org?id=Belongg",
+              to: "/docs/2024?id=Belongg",
             },
             {
               label: "Bhashini",
-              to: "/docs/2024/org?id=Bhashini",
+              to: "/docs/2024?id=Bhashini",
             },
             {
               label: "Blockster Labs/ CREDEBL",
-              to: "/docs/2024/org?id=Blockster%20Labs/%20CREDEBL",
+              to: "/docs/2024?id=Blockster%20Labs/%20CREDEBL",
             },
             {
               label: "ConveGenius AI",
-              to: "/docs/2024/org?id=ConveGenius%20AI",
+              to: "/docs/2024?id=ConveGenius%20AI",
             },
             {
               label: "Dhiway",
-              to: "/docs/2024/org?id=Dhiway",
+              to: "/docs/2024?id=Dhiway",
             },
             {
               label: "eGovernments Foundation",
-              to: "/docs/2024/org?id=eGovernments%20Foundation",
+              to: "/docs/2024?id=eGovernments%20Foundation",
             },
             {
               label: "EkStep Foundation",
-              to: "/docs/2024/org?id=EkStep%20Foundation",
+              to: "/docs/2024?id=EkStep%20Foundation",
             },
             {
               label: "Haqdarshak",
-              to: "/docs/2024/org?id=Haqdarshak",
+              to: "/docs/2024?id=Haqdarshak",
             },
             {
               label: "IDinsight",
-              to: "/docs/2024/org?id=IDinsight",
+              to: "/docs/2024?id=IDinsight",
             },
             {
               label: "MeitY",
-              to: "/docs/2024/org?id=MeitY",
+              to: "/docs/2024?id=MeitY",
             },
             {
               label: "Mojaloop",
-              to: "/docs/2024/org?id=Mojaloop",
+              to: "/docs/2024?id=Mojaloop",
             },
             {
               label: "NSUT in collaboration with C4GT, SEETA, AIC",
-              to: "/docs/2024/org?id=NSUT%20in%20collaboration%20with%20C4GT,%20SEETA,%20AIC",
+              to: "/docs/2024?id=NSUT%20in%20collaboration%20with%20C4GT,%20SEETA,%20AIC",
             },
             {
               label: "Open Function Group",
-              to: "/docs/2024/org?id=Open%20Function%20Group",
+              to: "/docs/2024?id=Open%20Function%20Group",
             },
             {
               label: "Piramal Swasthya Management Research",
-              to: "/docs/2024/org?id=Piramal%20Swasthya%20Management%20Research",
+              to: "/docs/2024?id=Piramal%20Swasthya%20Management%20Research",
             },
             {
               label: "Planet Read",
-              to: "/docs/2024/org?id=Planet%20Read",
+              to: "/docs/2024?id=Planet%20Read",
             },
             {
               label: "PolicyEngine",
-              to: "/docs/2024/org?id=PolicyEngine",
+              to: "/docs/2024?id=PolicyEngine",
             },
             {
               label: "Project Tech4Dev",
-              to: "/docs/2024/org?id=Project%20Tech4Dev",
+              to: "/docs/2024?id=Project%20Tech4Dev",
             },
             {
               label: "Protean",
-              to: "/docs/2024/org?id=Protean",
+              to: "/docs/2024?id=Protean",
             },
             {
               label: "Reap Benefit",
-              to: "/docs/2024/org?id=Reap%20Benefit",
+              to: "/docs/2024?id=Reap%20Benefit",
             },
             {
               label: "SamagraX",
-              to: "/docs/2024/org?id=SamagraX",
+              to: "/docs/2024?id=SamagraX",
             },
             {
               label: "Samanway Foundation",
-              to: "/docs/2024/org?id=Samanway%20Foundation",
+              to: "/docs/2024?id=Samanway%20Foundation",
             },
             {
               label: "Shikshalokam",
-              to: "/docs/2024/org?id=Shikshalokam",
+              to: "/docs/2024?id=Shikshalokam",
             },
             {
               label: "Sugar Labs",
-              to: "/docs/2024/org?id=Sugar%20Labs",
+              to: "/docs/2024?id=Sugar%20Labs",
             },
             {
               label: "Swasth Alliance",
-              to: "/docs/2024/org?id=Swasth%20Alliance",
+              to: "/docs/2024?id=Swasth%20Alliance",
             },
             {
               label: "Tattle",
-              to: "/docs/2024/org?id=Tattle",
+              to: "/docs/2024?id=Tattle",
             },
             {
               label: "Tekdi",
-              to: "/docs/2024/org?id=Tekdi",
+              to: "/docs/2024?id=Tekdi",
             },
             {
               label: "The Mifos Initiative",
-              to: "/docs/2024/org?id=The%20Mifos%20Initiative",
+              to: "/docs/2024?id=The%20Mifos%20Initiative",
             },
             {
               label: "Unicef",
-              to: "/docs/2024/org?id=Unicef",
+              to: "/docs/2024?id=Unicef",
             },
             {
               label: "Zendalona",
-              to: "/docs/2024/org?id=Zendalona",
+              to: "/docs/2024?id=Zendalona",
             },
             {
               label: "Zenysis Technologies",
-              to: "/docs/2024/org?id=Zenysis%20Technologies",
+              to: "/docs/2024?id=Zenysis%20Technologies",
             },
           ]
         }
