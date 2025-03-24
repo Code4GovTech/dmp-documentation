@@ -376,20 +376,12 @@ module.exports = {
           items: [
             // Add your 2025 organizations here
             {
-              label: "2025 Org 1",
-              to: "/docs/2025?id=2025Org1",
+              label: "Test org",
+              to: "/docs/2025?id=Aakash",
             },
             {
-              label: "2025 Org 2",
-              to: "/docs/2025?id=2025Org2",
-            },
-            {
-              label: "A2I Bangladesh",
-              to: "/docs/2024?id=A2I%20Bangladesh",
-            },
-            {
-              label: "ABDM Enablers",
-              to: "/docs/2024?id=ABDM%20Enablers",
+              label: "Arghyam",
+              to: "/docs/2025?id=Arghyam",
             },
             // ... more 2025 organizations ...
           ],
