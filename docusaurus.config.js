@@ -374,17 +374,175 @@ module.exports = {
           position: "left",
           to: "/docs/2025/",
           items: [
-            // Add your 2025 organizations here
-            {
-              label: "Test org",
-              to: "/docs/2025?id=Aakash",
-            },
-            {
-              label: "Arghyam",
-              to: "/docs/2025?id=Arghyam",
-            },
-            // ... more 2025 organizations ...
-          ],
+          {
+            label: "ADC karnal",
+            to: "/docs/2025?id=ADC%20karnal",
+          },
+          {
+            label: "ADC Mahendragarh",
+            to: "/docs/2025?id=ADC%20Mahendragarh",
+          },
+          {
+            label: "ADC Rohtak",
+            to: "/docs/2025?id=ADC%20Rohtak",
+          },
+          {
+            label: "Armman",
+            to: "/docs/2025?id=Armman",
+          },
+          {
+            label: "Avanti Fellows",
+            to: "/docs/2025?id=Avanti%20Fellows",
+          },
+          {
+            label: "Beckn Collective",
+            to: "/docs/2025?id=Beckn%20Collective",
+          },
+          {
+            label: "CMC Ambala",
+            to: "/docs/2025?id=CMC%20Ambala",
+          },
+          {
+            label: "Consul Democracy",
+            to: "/docs/2025?id=Consul%20Democracy",
+          },
+          {
+            label: "COSS",
+            to: "/docs/2025?id=COSS",
+          },
+          {
+            label: "Dhwani",
+            to: "/docs/2025?id=Dhwani",
+          },
+          {
+            label: "Education Initiative",
+            to: "/docs/2025?id=Education%20Initiative",
+          },
+          {
+            label: "Flywheel",
+            to: "/docs/2025?id=Flywheel",
+          },
+          {
+            label: "Haqdarshak",
+            to: "/docs/2025?id=Haqdarshak",
+          },
+          {
+            label: "iabsis",
+            to: "/docs/2025?id=iabsis",
+          },
+          {
+            label: "IDInsight",
+            to: "/docs/2025?id=IDInsight",
+          },
+          {
+            label: "IIIT-Delhi",
+            to: "/docs/2025?id=IIIT-Delhi",
+          },
+          {
+            label: "IIIT-H RCTS",
+            to: "/docs/2025?id=IIIT-H%20RCTS",
+          },
+          {
+            label: "Medic",
+            to: "/docs/2025?id=Medic",
+          },
+          {
+            label: "MedPlat",
+            to: "/docs/2025?id=MedPlat",
+          },
+          {
+            label: "Medtronic Labs",
+            to: "/docs/2025?id=Medtronic%20Labs",
+          },
+          {
+            label: "MeitY",
+            to: "/docs/2025?id=MeitY",
+          },
+          {
+            label: "Metabrainz",
+            to: "/docs/2025?id=Metabrainz",
+          },
+          {
+            label: "Mifos",
+            to: "/docs/2025?id=Mifos",
+          },
+          {
+            label: "Mojaloop Foundation",
+            to: "/docs/2025?id=Mojaloop%20Foundation",
+          },
+          {
+            label: "MOSIP",
+            to: "/docs/2025?id=MOSIP",
+          },
+          {
+            label: "National Urban Digital Mission",
+            to: "/docs/2025?id=National%20Urban%20Digital%20Mission",
+          },
+          {
+            label: "NHA",
+            to: "/docs/2025?id=NHA",
+          },
+          {
+            label: "NSUT in collaboration with C4GT, SEETA and AIC",
+            to: "/docs/2025?id=NSUT%20in%20collaboration%20with%20C4GT%2C%20SEETA%20and%20AIC",
+          },
+          {
+            label: "OpenIMIS",
+            to: "/docs/2025?id=OpenIMIS",
+          },
+          {
+            label: "OpenNyAI",
+            to: "/docs/2025?id=OpenNyAI",
+          },
+          {
+            label: "Piramal Swasthya Management and Research Institute",
+            to: "/docs/2025?id=Piramal%20Swasthya%20Management%20and%20Research%20Institute",
+          },
+          {
+            label: "PlanetRead",
+            to: "/docs/2025?id=PlanetRead",
+          },
+          {
+            label: "Pratham Books",
+            to: "/docs/2025?id=Pratham%20Books",
+          },
+          {
+            label: "Protean",
+            to: "/docs/2025?id=Protean",
+          },
+          {
+            label: "Samanvay Foundation",
+            to: "/docs/2025?id=Samanvay%20Foundation",
+          },
+          {
+            label: "Sampatti Card",
+            to: "/docs/2025?id=Sampatti%20Card",
+          },
+          {
+            label: "ShikshaLokam",
+            to: "/docs/2025?id=ShikshaLokam",
+          },
+          {
+            label: "Statwig",
+            to: "/docs/2025?id=Statwig",
+          },
+          {
+            label: "Sugar Labs",
+            to: "/docs/2025?id=Sugar%20Labs",
+          },
+          {
+            label: "Tattle",
+            to: "/docs/2025?id=Tattle",
+          },
+          {
+            label: "Tekdi",
+            to: "/docs/2025?id=Tekdi",
+          },
+          {
+            label: "The Apprentice Project",
+            to: "/docs/2025?id=The%20Apprentice%20Project",
+          },
+        ],
         },
       ],
     },
