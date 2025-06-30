@@ -1,3 +1,5 @@
+// src/pages/docs/2025/index.js
+
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
 import "./index.css";
@@ -5,11 +7,11 @@ import { useHistory, useLocation } from "react-router-dom";
 import useParseMarkdown from "../../../hooks/useParseMarkdown";
 import ErrorComponent from "../../../components/ErrorComponent";
 import Sidebar from "../../../components/Sidebar";
-import C4GT2024Description from "../../../components/C4gt2024Description";
+import C4GT2025Description from "../../../components/C4gt2025Description";
 import OrgDescription from "../../../components/OrgDescription";
 import IssueDescription from "../../../components/IssueDescription";
 
-function C4GT2024() {
+function C4GT2025() {
   const location = useLocation();
   const history = useHistory();
   const { API_AUTH_KEY, API_BASE_URL } = useParseMarkdown();
@@ -19,7 +21,7 @@ function C4GT2024() {
   const [currentOrgData, setCurrentOrgData] = useState(null);
   const [currentTab, setCurrentTab] = useState(null);
   const [error, setError] = useState(null);
-  const year = 2024; // Define year here
+  const year = 2025; // Define year variable
 
   useEffect(() => {
     setError(() => null);
@@ -42,7 +44,7 @@ function C4GT2024() {
       setCurrentOrg(null);
       setCurrentTab("c4gt");
     }
-    fetch(`${API_BASE_URL}/issues?year=${year}`, {
+    fetch(`${API_BASE_URL}/issues?year=${year}`, { // Modified API call
       method: "GET",
       headers: {
         "X-Secret-Key": API_AUTH_KEY,
@@ -107,7 +109,7 @@ function C4GT2024() {
         <Layout>
           <div className="main-wrapper docs-wrapper docs-doc-page">
             <div className="sidebar-container">
-              <aside className="theme-doc-sidebar-container sidebar-container-2024">
+              <aside className="theme-doc-sidebar-container sidebar-container-2025">
                 <Sidebar
                   issueData={issueData}
                   currentTab={currentTab}
@@ -121,7 +123,7 @@ function C4GT2024() {
               </aside>
               <main className="main-container">
                 {currentTab === "c4gt" ? (
-                  <C4GT2024Description />
+                  <C4GT2025Description />
                 ) : currentIssue != null ? (
                   <IssueDescription currentOrg={currentOrg} currentIssue={currentIssue} />
                 ) : currentOrg != null ? (
@@ -144,4 +146,4 @@ function C4GT2024() {
   );
 }
 
-export default C4GT2024;
+export default C4GT2025;
