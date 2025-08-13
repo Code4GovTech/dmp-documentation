@@ -62,6 +62,7 @@ function C4GT2025() {
           let issues = data?.issues;
            // alpha order  
           issues = issues?.sort((a, b) => a.org_name.localeCompare(b.org_name));
+          console.log("issues", issues);
           setIssueData(() => issues);
           if (ifOrg) {
             setCurrentOrgData(() => {
