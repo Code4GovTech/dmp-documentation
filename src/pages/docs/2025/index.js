@@ -60,6 +60,8 @@ function C4GT2025() {
           throw new Error(`${data?.error}`);
         } else {
           let issues = data?.issues;
+           // alpha order  
+          issues = issues?.sort((a, b) => a.org_name.localeCompare(b.org_name));
           setIssueData(() => issues);
           if (ifOrg) {
             setCurrentOrgData(() => {
